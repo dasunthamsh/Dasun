@@ -1,4 +1,4 @@
-// components/ScrollingImageOverlay.js (Ultra minimal gap version)
+// components/ScrollingImageOverlay.js (Fixed version)
 'use client';
 
 import { useEffect, useRef } from 'react';
@@ -17,11 +17,11 @@ const ScrollingImageOverlay = () => {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
-            // Faster animations with shorter distance
+            // Title scroll animation - moves up and fades
             gsap.to(textRef.current, {
-                y: 80,
-                scale: 0.6,
-                opacity: 0,
+                y: -50,
+                scale: 0.9,
+                opacity: 0.8,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: containerRef.current,
@@ -31,8 +31,9 @@ const ScrollingImageOverlay = () => {
                 }
             });
 
+            // Image scroll animation
             gsap.to(imageRef.current, {
-                y: -150,
+                y: -100,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: containerRef.current,
@@ -50,7 +51,7 @@ const ScrollingImageOverlay = () => {
                     y: 0,
                     scrollTrigger: {
                         trigger: contentRef.current,
-                        start: "top 95%",
+                        start: "top 10%",
                         end: "top 70%",
                         scrub: 1,
                     }
@@ -64,12 +65,16 @@ const ScrollingImageOverlay = () => {
     return (
         <div className="bg-black text-white overflow-x-hidden" ref={containerRef}>
             <div className="mx-5">
-                {/* Compact hero section */}
-                <div className="relative flex flex-col items-center justify-center min-h-[90vh] text-center overflow-hidden">
-                    <h1 ref={textRef} className="absolute top-10 text-6xl font-bold">
+                {/* Title at the top */}
+                <div className="pt-12 pb-8 text-center">
+                    <h1 ref={textRef} className="text-6xl font-bold pt-20">
                         MORE ABOUT <br /> DASUN©
                     </h1>
-                    <div ref={imageRef} className="absolute top-1/2 transform -translate-y-1/2">
+                </div>
+
+                {/* Hero section with image */}
+                <div className="relative flex flex-col items-center justify-center min-h-[60vh] overflow-hidden">
+                    <div ref={imageRef} className="mt-8">
                         <img
                             src="/images/about.png"
                             alt="Fashion Model"
@@ -79,14 +84,17 @@ const ScrollingImageOverlay = () => {
                 </div>
 
                 {/* Content with virtually no gap */}
-                <div ref={contentRef} className="relative bottom-50">
+                <div ref={contentRef} className="pt-2">
                     <div className="mb-6">
-                        <p className="text-center font-nimbus text-gray-500 font-light">
-                            I'm on the cutting edge of no-code tools that allow me to bring my creative visions to life. Though my methods may<br /> be unconventional, my dedication to the craft is unparalleled. I thrive on finding "unexpected solutions" and believe <br /> that with the right perspective, design can elevate the human experience.
+                        <p className="text-center font-nimbus text-gray-500 font-light mt-5">
+                            I'm on the cutting edge of no-code tools that allow me to bring my creative visions to life. 
+                            Though my methods may<br /> be unconventional, my dedication to the craft is unparalleled. 
+                            I thrive on finding "unexpected solutions" and believe<br /> that with the right perspective, 
+                            design can elevate the human experience.
                         </p>
                     </div>
 
-                    <div className="text-center m-5 font-nimbus">
+               <div className="text-center m-5 font-nimbus">
                         <h3 className="font-bold text-xl mb-5">What I do</h3>
                         <div className="flex flex-col justify-center m-5 space-y-2">
                             <h5>UI/UX design</h5>
