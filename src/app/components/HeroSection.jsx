@@ -27,7 +27,7 @@ const HeroSection = () => {
             </div>
 
             {/* Content Container - positioned above image */}
-            <div className="relative z-20 container mx-auto px-4">
+            <div className="relative z-20 container mx-auto px-4 mt-24">
                 <h3 className="text-3xl text-yellow-600 mt-11 font-bold" style={{ fontFamily: 'fantasy' }}>
                     Hello, I'm
                 </h3>
