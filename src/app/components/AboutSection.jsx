@@ -44,19 +44,19 @@ const ScrollingImageOverlay = () => {
             });
 
             // Content appears immediately
-            gsap.fromTo(contentRef.current,
-                { opacity: 0, y: 20 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    scrollTrigger: {
-                        trigger: contentRef.current,
-                        start: "top 10%",
-                        end: "top 70%",
-                        scrub: 1,
-                    }
-                }
-            );
+            // gsap.fromTo(contentRef.current,
+            //     { opacity: 0, y: 20 },
+            //     {
+            //         opacity: 1,
+            //         y: 0,
+            //         scrollTrigger: {
+            //             trigger: contentRef.current,
+            //             start: "top 10%",
+            //             end: "top 70%",
+            //             scrub: 1,
+            //         }
+            //     }
+            // );
         });
 
         return () => ctx.revert();
@@ -84,7 +84,7 @@ const ScrollingImageOverlay = () => {
                 </div>
 
                 {/* Content with virtually no gap */}
-                <div ref={contentRef} className="pt-2">
+                <div className="pt-2">
                     <div className="mb-6">
                         <p className="text-center font-nimbus text-gray-500 font-light mt-5">
                             I'm on the cutting edge of no-code tools that allow me to bring my creative visions to life. 
