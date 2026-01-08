@@ -63,7 +63,7 @@ const ScrollingImageOverlay = () => {
     }, []);
 
     return (
-        <div className="bg-black text-white overflow-x-hidden" ref={containerRef}>
+        <div className=" text-white overflow-x-hidden" ref={containerRef}>
             <div className="mx-5">
                 {/* Title at the top */}
                 <div className="pt-12 pb-8 text-center">
@@ -86,7 +86,7 @@ const ScrollingImageOverlay = () => {
                 {/* Content with virtually no gap */}
                 <div className="pt-2">
                     <div className="mb-6">
-                        <p className="text-center font-nimbus text-gray-500 font-light mt-5">
+                        <p className="text-center font-nimbus text-gray-500  mt-5">
                             I'm on the cutting edge of no-code tools that allow me to bring my creative visions to life. 
                             Though my methods may<br /> be unconventional, my dedication to the craft is unparalleled. 
                             I thrive on finding "unexpected solutions" and believe<br /> that with the right perspective, 

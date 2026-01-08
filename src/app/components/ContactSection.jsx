@@ -22,8 +22,10 @@ const ContactSection = () => {
   return (
     <div 
       id="contact"
-      className="text-white text-center justify-center content-center min-h-screen flex flex-col items-center px-4"
+      className="text-white text-center justify-center content-center min-h-screen flex flex-col items-center px-4 "
     >
+
+      <div className='backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl  rounded-xl p-24'>
       <h1 className="text-4xl md:text-9xl font-semibold mb-8 md:mb-12">
         HAVE AN IDEA?
       </h1>
@@ -58,6 +60,17 @@ const ContactSection = () => {
         )}
       </div>
 
+        <div className='absolute '>
+        <img
+            src="/images/shp.png"
+            alt="Fashion Model"
+            className="w-96 rounded-lg shadow-lg -z-10 blur-xs"
+        />
+      </div>
+
+
+      <div className='justify-center content-center  flex flex-col items-center '>
+
       {/* Optional: Social Links */}
       <div className="mt-8 flex space-x-6">
         <a 
@@ -85,6 +98,13 @@ const ContactSection = () => {
           Twitter
         </a>
       </div>
+      </div>
+      </div>
+
+     <div className='pt-14 z-10'>
+         <h6>Copyright © 2025 DevGent. All Rights Reserved</h6>
+      </div>
+
     </div>
   );
 };

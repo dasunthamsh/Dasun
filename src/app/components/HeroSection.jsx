@@ -8,7 +8,7 @@ const HeroSection = () => {
             <div className="absolute inset-0 z-0">
                 <div className="relative h-full w-full">
                     {/* Left empty space for content */}
-                    <div className="absolute left-0 top-0 h-full w-1/2 bg-black z-10"></div>
+                    <div className="absolute left-0 top-0 h-full w-1/2  z-10"></div>
                     
                     {/* Image on right half */}
                     <div className="absolute right-0 top-0 h-full w-1/2 opacity-50">
