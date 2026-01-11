@@ -82,8 +82,8 @@ export default function InteractiveBrandCarousel() {
                         src={brand.logoPath}
                         alt={`${brand.name} logo`}
                         fill
-                        className="object-contain"
-                        sizes="(max-width: 640px) 80px, (max-width: 1024px) 100px, 120px"
+                        className="object-contain "
+                        sizes="(max-width: 640px) 80px, (max-width: 1024px) 100px, 120px "
                         priority={brand.id <= 2}
                       />
                     </div>

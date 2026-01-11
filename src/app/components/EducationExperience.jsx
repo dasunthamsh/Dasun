@@ -62,7 +62,7 @@ const EducationExperience = () => {
   return (
     <div>
       {/* Header */}
-      <div className="flex justify-center gap-5 text-4xl font-bold my-20 text-yellow-500 flex-wrap">
+      <div className="flex justify-center gap-5 text-5xl font-bold my-20 flex-wrap">
         <h1 
           data-aos="fade-right" 
           data-aos-duration="2000"

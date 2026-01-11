@@ -67,7 +67,7 @@ const ScrollingImageOverlay = () => {
             <div className="mx-5">
                 {/* Title at the top */}
                 <div className="pt-12 pb-8 text-center">
-                    <h1 ref={textRef} className="text-6xl font-bold pt-20">
+                    <h1 ref={textRef} className="text-5xl font-bold pt-20">
                         MORE ABOUT <br /> DASUN©
                     </h1>
                 </div>
@@ -76,9 +76,9 @@ const ScrollingImageOverlay = () => {
                 <div className="relative flex flex-col items-center justify-center min-h-[60vh] overflow-hidden">
                     <div ref={imageRef} className="mt-8">
                         <img
-                            src="/images/about.png"
+                            src="/images/aboutnew.png"
                             alt="Fashion Model"
-                            className="w-96 rounded-lg shadow-lg"
+                            className="w-4xl rounded-lg shadow-lg"
                         />
                     </div>
                 </div>

@@ -1,36 +1,62 @@
-import Image from "next/image";
+'use client'
+
+import { useEffect } from 'react';
 import HeroSection from "@/app/components/HeroSection";
-import AboutSection from "@/app/components/AboutSection";
+import AboutSection from "@/app/components/AboutSection"; // This might be ScrollingImageOverlay
 import EducationExperience from "./components/EducationExperience";
 import ContactSection from "./components/ContactSection";
-import BrandCarousel from "./components/BrandCarousel";
 import LogoCarousel from "./components/BrandCarousel";
+import Projects from "./components/Projects";
+import Header from "./components/Header";
 
 export default function Home() {
+  
+  useEffect(() => {
+    // This ensures sections have proper IDs for navigation
+    // Make sure these IDs match what you're actually rendering below
+    const sections = [
+      { id: 'home' },
+      { id: 'projects' },
+      { id: 'about' }, // or 'about' if that's what you want
+      { id: 'education' },
+      { id: 'contact' },
+    ];
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center  font-sans bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
-      <main className="">
-          <div>
-              <HeroSection/>
-          </div>
+    <div className="flex min-h-screen items-center justify-center font-sans bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
+      <main className="w-full">
+        <Header/>
+        
+        {/* Hero Section */}
+        <section id="home" className="relative">
+          <HeroSection/>
+        </section>
 
-          <div className="mt-44">
-              <AboutSection/>
-          </div>
+        {/* About Section - Check if AboutSection is the same as ScrollingImageOverlay */}
+        <section id="about" className="mt-44 relative">
+          <AboutSection/>
+        </section>
 
-           <div className="mt-44">
-              <LogoCarousel/>
-          </div>
+        {/* Brand Carousel */}
+        <section className="mt-44 relative">
+          <LogoCarousel/>
+        </section>
 
-            <div className="mt-44">
-              <EducationExperience/>
-          </div>
+        {/* Education & Experience */}
+        <section id="education" className="mt-44 relative">
+          <EducationExperience/>
+        </section>
 
-            <div className="mt-44">
-              <ContactSection/>
-          </div>
+        {/* Projects */}
+        <section id="projects" className="mt-44 relative">
+          <Projects/>
+        </section>
 
-
+        {/* Contact */}
+        <section id="contact" className="mt-44 relative">
+          <ContactSection/>
+        </section>
       </main>
     </div>
   );

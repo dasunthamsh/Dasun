@@ -3,35 +3,33 @@ import Image from 'next/image';
 
 const HeroSection = () => {
     return (
-        <div className="relative text-center  overflow-hidden min-h-screen">
+        <div className="relative text-center overflow-hidden min-h-screen">
             {/* Background Image on Right Side */}
             <div className="absolute inset-0 z-0">
                 <div className="relative h-full w-full">
                     {/* Left empty space for content */}
-                    <div className="absolute left-0 top-0 h-full w-1/2  z-10"></div>
-                    
-                    {/* Image on right half */}
-                    <div className="absolute right-0 top-0 h-full w-1/2 opacity-50">
+                    <div className="absolute left-0 top-0 h-full w-1/2 z-10"></div>
+                   
+                    {/* Image on right half with hover effect */}
+                    <div className="absolute right-0 top-0 h-full w-1/2 opacity-50 hover:opacity-100 hover:z-50 transition-all duration-500 group cursor-pointer">
                         <Image
-                            src="/images/me.png" // Change to your image path
+                            src="/images/me.png"
                             alt="Dasun Thamash"
                             fill
-                            className="object-cover grayscale brightness-75 contrast-110"
+                            className="object-cover grayscale brightness-75 contrast-110 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 z-50"
                             priority
                             sizes="50vw"
                         />
                         {/* Overlay to enhance contrast */}
-                        <div className="absolute inset-0 bg-gradient-to-l from-black/30 via-transparent to-black/10 z-0"></div>
+                        <div className="absolute inset-0 bg-gradient-to-l from-black/30 via-transparent to-black/10 z-0 group-hover:opacity-0 transition-opacity duration-500"></div>
                     </div>
                 </div>
             </div>
-
             {/* Content Container - positioned above image */}
             <div className="relative z-20 container mx-auto px-4 mt-24">
                 <h3 className="text-3xl text-yellow-600 mt-11 font-bold" style={{ fontFamily: 'fantasy' }}>
                     Hello, I'm
                 </h3>
-
                 <h1
                     id="scrollingText"
                     className="text-7xl md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-purple-400 via-pink-600 to-red-500 mt-11"
@@ -39,7 +37,6 @@ const HeroSection = () => {
                 >
                     DASUN THAMASH
                 </h1>
-
                 <p
                     id="about"
                     className="text-lg text-white mt-11 max-w-2xl mx-auto"
@@ -49,7 +46,6 @@ const HeroSection = () => {
                     passionate about building innovative solutions and continuously<br />
                     improving my skills.
                 </p>
-
                 {/* Social Media Icons */}
                 <div className="mt-11 flex justify-center space-x-6">
                     <a
@@ -61,7 +57,6 @@ const HeroSection = () => {
                     >
                         <FaTwitter size={40} />
                     </a>
-
                     <a
                         href="https://www.facebook.com/profile.php?id=100028425432835"
                         target="_blank"
@@ -71,7 +66,6 @@ const HeroSection = () => {
                     >
                         <FaFacebookF size={40} />
                     </a>
-
                     <a
                         href="https://www.linkedin.com/in/dasun-thamash-4a9614252/"
                         target="_blank"
@@ -81,7 +75,6 @@ const HeroSection = () => {
                     >
                         <FaLinkedinIn size={40} />
                     </a>
-
                     <a
                         href="https://github.com/dasunthamsh"
                         target="_blank"
@@ -93,7 +86,6 @@ const HeroSection = () => {
                     </a>
                 </div>
             </div>
-
             {/* Available Now Indicator */}
             <div
                 id="available-now"
