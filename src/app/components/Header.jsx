@@ -60,7 +60,7 @@ const Header = () => {
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg"></div>
+              <div className="w-10 h-10 bg-amber-50 rounded-lg"></div>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ const Header = () => {
   return (
     <>
     <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-  <div className="bg-black/80 backdrop-blur-xl rounded-full shadow-2xl px-4 py-2">
+  <div className="bg-[#171717] backdrop-blur-xl rounded-full shadow-2xl px-4 py-2">
     <div className="flex items-center gap-6">
             
             {/* Logo */}
@@ -111,7 +111,7 @@ const Header = () => {
                   }`}>
                     {item.label}
                   </span>
-                  <div className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-300 ${
+                  <div className={`absolute -bottom-1 left-0 h-0.5 transition-all duration-300 ${
                     activeSection === item.id ? 'w-full' : 'w-0 group-hover:w-full'
                   }`}></div>
                 </button>
@@ -178,7 +178,7 @@ const Header = () => {
                     <div className="flex items-center space-x-4">
                       <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
                         activeSection === item.id 
-                          ? 'bg-gradient-to-r from-purple-500 to-pink-600 scale-125' 
+                          ? 'bg-white scale-125' 
                           : 'bg-gray-600 group-hover:bg-gray-500'
                       }`}></div>
                       <span className={`text-lg font-medium transition-colors duration-300 ${
@@ -226,7 +226,7 @@ const Header = () => {
       {/* Scroll Progress Indicator */}
       <div className="fixed top-0 left-0 right-0 h-0.5 z-40">
         <div 
-          className="h-full bg-gradient-to-r from-purple-500 to-pink-600 transition-all duration-300"
+          className="h-full bg-white transition-all duration-300"
           style={{
             width: `${(activeSection === 'home' ? 0 : 
                      activeSection === 'projects' ? 25 : 

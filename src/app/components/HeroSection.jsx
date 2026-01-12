@@ -1,17 +1,86 @@
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 const HeroSection = () => {
+    const [scrollY, setScrollY] = useState(0);
+    const [isScrollingDown, setIsScrollingDown] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            setScrollY(currentScrollY);
+            
+            // Determine scroll direction
+            if (currentScrollY > lastScrollY) {
+                setIsScrollingDown(true);
+            } else {
+                setIsScrollingDown(false);
+            }
+            
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [lastScrollY]);
+
+    // Calculate translate values based on scroll
+    const getTranslateValues = () => {
+        // Max translation value (adjust as needed)
+        const maxTranslate = 900;
+        // Calculate how much to translate based on scroll position
+        // Start translating after 100px of scroll
+        const startTranslate = 100;
+        const scrollProgress = Math.min(Math.max(scrollY - startTranslate, 0), 300);
+        const translatePercentage = scrollProgress / 300;
+        
+        // When scrolling down, move apart; when scrolling up, move back together
+        if (isScrollingDown) {
+            return {
+                leftTranslate: -translatePercentage * maxTranslate,
+                rightTranslate: translatePercentage * maxTranslate,
+                opacity: 1 - (translatePercentage * 0.3) // Optional: slightly fade as they move apart
+            };
+        } else {
+            // When scrolling up, smoothly return to original position
+            return {
+                leftTranslate: -translatePercentage * maxTranslate,
+                rightTranslate: translatePercentage * maxTranslate,
+                opacity: 1 - (translatePercentage * 0.3)
+            };
+        }
+    };
+
+    const { leftTranslate, rightTranslate, opacity } = getTranslateValues();
+
     return (
         <div className="relative text-center overflow-hidden min-h-screen">
             {/* Background Image on Right Side */}
             <div className="absolute inset-0 z-0">
                 <div className="relative h-full w-full">
-                    {/* Left empty space for content */}
-                    <div className="absolute left-0 top-0 h-full w-1/2 z-10"></div>
+                    {/* Left empty space for content - Moves left on scroll down */}
+                    <div 
+                        className="absolute top-0 h-full w-1/2 z-10 transition-all duration-500 ease-out"
+                        style={{
+                            transform: `translateX(${leftTranslate}px)`,
+                            left: 0
+                        }}
+                    ></div>
                    
-                    {/* Image on right half with hover effect */}
-                    <div className="absolute right-0 top-0 h-full w-1/2 opacity-50 hover:opacity-100 hover:z-50 transition-all duration-500 group cursor-pointer">
+                    {/* Image on right half - Moves right on scroll down */}
+                    <div 
+                        className="absolute top-0 h-full w-1/2 opacity-50 hover:opacity-100 hover:z-50 transition-all duration-500 group cursor-pointer"
+                        style={{
+                            transform: `translateX(${rightTranslate}px)`,
+                            right: 0,
+                            opacity: opacity
+                        }}
+                    >
                         <Image
                             src="/images/me.png"
                             alt="Dasun Thamash"
