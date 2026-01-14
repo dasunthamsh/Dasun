@@ -9,7 +9,7 @@ const Projects = () => {
       id: 1, 
       content: "Ride Share App", 
       bgColor: "bg-blue-100",
-      imageSrc: "/images/2.png",
+      imageSrc: "/images/helloRide.png",
       tags: ["UI UX", "App"]
     },
     { 
@@ -30,7 +30,7 @@ const Projects = () => {
       id: 4, 
       content: "E-commerce", 
       bgColor: "bg-purple-100",
-      imageSrc: "/images/3.png",
+      imageSrc: "/images/petpal.png",
       tags: ["Shopify", "Payment", "Cart"]
     },
     { 
@@ -56,44 +56,44 @@ const Projects = () => {
     },
     { 
       id: 8, 
-      content: "AI Assistant", 
-      bgColor: "bg-red-100",
-      imageSrc: "/images/8.png",
-      tags: ["AI", "Chatbot", "ML"]
+      content: "Comming soon", 
+      bgColor: "",
+      imageSrc: "",
+      tags: ["",""]
     },
     { 
       id: 9, 
-      content: "Fitness App", 
+      content: "Comming soon", 
       bgColor: "bg-teal-100",
-      imageSrc: "/images/9.png",
-      tags: ["Health", "Mobile", "Tracking"]
+      imageSrc: "",
+      tags: ["",""]
     },
     { 
       id: 10, 
-      content: "Music Player", 
+      content: "Comming soon", 
       bgColor: "bg-orange-100",
-      imageSrc: "/images/10.png",
-      tags: ["Audio", "Streaming", "Mobile"]
+      imageSrc: "",
+      tags: ["",""]
     },
     { 
       id: 11, 
-      content: "Social Media", 
+      content: "Comming soon", 
       bgColor: "bg-cyan-100",
-      imageSrc: "/images/11.png",
-      tags: ["Social", "Network", "App"]
+      imageSrc: "",
+      tags: ["",""]
     },
     { 
       id: 12, 
-      content: "Cloud Storage", 
+      content: "Comming soon", 
       bgColor: "bg-lime-100",
-      imageSrc: "/images/12.png",
-      tags: ["Cloud", "Storage", "Security"]
+      imageSrc: "",
+      tags: ["",""]
     },
   ];
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
-      <h1 className="text-5xl font-bold self-start mb-12">Turning Ideas into Products</h1>
+      <h1 className="text-5xl font-bold self-center mb-20 ">Turning Ideas into Products</h1>
       
       <div className="w-full max-w-6xl">
         <Carousel

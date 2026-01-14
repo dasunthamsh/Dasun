@@ -8,6 +8,8 @@ import ContactSection from "./components/ContactSection";
 import LogoCarousel from "./components/BrandCarousel";
 import Projects from "./components/Projects";
 import Header from "./components/Header";
+import ProjectsSlider from './components/ProjectsSlider';
+import VlogsSection from './components/Blogs';
 
 export default function Home() {
   
@@ -16,8 +18,8 @@ export default function Home() {
     // Make sure these IDs match what you're actually rendering below
     const sections = [
       { id: 'home' },
-      { id: 'projects' },
       { id: 'about' }, // or 'about' if that's what you want
+      { id: 'projects' },
       { id: 'education' },
       { id: 'contact' },
     ];
@@ -34,7 +36,7 @@ export default function Home() {
         </section>
 
         {/* About Section - Check if AboutSection is the same as ScrollingImageOverlay */}
-        <section id="about" className="mt-44 relative">
+        <section id="about" className=" relative">
           <AboutSection/>
         </section>
 
@@ -53,6 +55,15 @@ export default function Home() {
           <Projects/>
         </section>
 
+        <section>
+          <VlogsSection/>
+        </section>
+
+        <section className="mt-44 relative">
+          <ProjectsSlider/>
+        </section>
+
+       
         {/* Contact */}
         <section id="contact" className="mt-44 relative">
           <ContactSection/>

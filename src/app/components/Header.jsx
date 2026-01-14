@@ -17,7 +17,7 @@ const Header = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
       
-      const sections = ['home', 'projects', 'about', 'education', 'contact'];
+      const sections = ['home', 'about','projects', 'education', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -38,8 +38,8 @@ const Header = () => {
 
   const navItems = [
     { label: 'Home', href: '#home', id: 'home' },
-    { label: 'Projects', href: '#projects', id: 'projects' },
     { label: 'About', href: '#about', id: 'about' },
+    { label: 'Projects', href: '#projects', id: 'projects' },
     { label: 'Education', href: '#education', id: 'education' },
     { label: 'Contact', href: '#contact', id: 'contact' },
   ];
@@ -229,9 +229,9 @@ const Header = () => {
           className="h-full bg-white transition-all duration-300"
           style={{
             width: `${(activeSection === 'home' ? 0 : 
-                     activeSection === 'projects' ? 25 : 
-                     activeSection === 'about' ? 50 : 
-                     activeSection === 'education' ? 75 : 100)}%`
+                     activeSection === 'about' ? 25 : 
+                     activeSection === 'education' ? 50 : 
+                     activeSection === 'projects' ? 75 : 100)}%`
           }}
         ></div>
       </div>

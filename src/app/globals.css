@@ -43,3 +43,33 @@ body {
 
 
   
+
+
+/* image slider animation */
+
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-vertical-up {
+  animation: scroll-up 90s linear infinite;
+}
+
+.animate-vertical-down {
+  animation: scroll-down 90s linear infinite;
+}

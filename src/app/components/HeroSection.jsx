@@ -102,7 +102,7 @@ const HeroSection = () => {
                 <h1
                     id="scrollingText"
                     className="text-7xl md:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-l from-purple-400 via-pink-600 to-red-500 mt-11"
-                    style={{ fontFamily: 'fantasy' }}
+                    style={{ fontFamily: 'Abril Fatface' }}
                 >
                     DASUN THAMASH
                 </h1>
