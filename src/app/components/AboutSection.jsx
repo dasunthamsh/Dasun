@@ -52,7 +52,7 @@ const ScrollingImageOverlay = () => {
                         </div>
                     </div>
 
-                    <div className='flex justify-center gap-8'>
+                    <div className='flex justify-center flex-wrap gap-8'>
                         <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
                              <img
                             src="/images/react.png"

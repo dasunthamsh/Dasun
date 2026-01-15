@@ -9,7 +9,7 @@ const Projects = () => {
       id: 1, 
       content: "Ride Share App", 
       bgColor: "bg-blue-100",
-      imageSrc: "/images/helloRide.png",
+      imageSrc: "/images/helloride.png",
       tags: ["UI UX", "App"]
     },
     { 
