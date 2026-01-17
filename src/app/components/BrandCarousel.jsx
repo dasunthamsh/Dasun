@@ -74,10 +74,11 @@ export default function InteractiveBrandCarousel() {
                 <div
                   key={brand.id}
                   className="flex-shrink-0 px-4"
-                  style={{ width: `${85 / visibleItems}%` }}
+                  style={{ width: `${100 / visibleItems}%` }}   
                 >
                   <div className="  transition-all duration-300 hover:-translate-y-1 p-4 h-full flex items-center justify-center">
-                    <div className="relative w-full h-12 md:h-20">
+                    <div className="relative w-full h-20 sm:h-24 md:h-28 lg:h-32">
+
                       <Image
                         src={brand.logoPath}
                         alt={`${brand.name} logo`}
