@@ -14,7 +14,7 @@ export default function Home() {
   src="/images/s.png"
   alt="Dasun Thamash"
   className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover grayscale brightness-75 contrast-110 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 z-10
-    sm:w-[100%]  w-[140%]  /* 80% width on mobile, auto on larger screens */
+    sm:w-[100%]  w-[200%]  /* 80% width on mobile, auto on larger screens */
     max-w-[2000px]  /* Max width on mobile */
     h-auto"
   priority
@@ -33,7 +33,7 @@ export default function Home() {
 
         {/* Main name - big & bold */}
          
-            <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-orange-600 my-30  ">
+            <h1 className="text-8xl sm:text-9xl font-black tracking-tight text-orange-600 my-30  ">
                 DASUN <br /> THAMASH
         
             </h1>
