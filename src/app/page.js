@@ -26,7 +26,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
+    <div className="flex min-h-screen items-center justify-center font-sans bg-black overflow-hidden">
       <main className="w-full">
 
         <section className=" z-20">

@@ -73,13 +73,13 @@ export default function InteractiveBrandCarousel() {
               {brands.map((brand) => (
                 <div
                   key={brand.id}
-                  className="flex-shrink-0 px-4"
-                  style={{ width: `${100 / visibleItems}%` }}   
+                  className="flex-shrink-0 "
+                  style={{ width: `${150 / visibleItems}%` }}   
                 >
-                  <div className="  transition-all duration-300 hover:-translate-y-1 p-4 h-full flex items-center justify-center">
-                    <div className="relative w-full h-20 sm:h-24 md:h-28 lg:h-32">
+                  <div className="  transition-all duration-300 hover:-translate-y-1  h-full flex items-center justify-center">
+                    <div className="relative w-full h-32 sm:h-24 md:h-28 lg:h-32">
 
-                      <Image
+                      <img
                         src={brand.logoPath}
                         alt={`${brand.name} logo`}
                         fill
