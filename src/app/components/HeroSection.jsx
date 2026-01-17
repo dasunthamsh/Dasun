@@ -16,6 +16,10 @@ export default function Home() {
                 className="object-cover w-2xl grayscale brightness-75 contrast-110 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 z-10"
                 priority
             />
+
+       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-orange-500 blur-[350px] w-86 h-86 opacity-70"></div>
+
+
         
         {/* Small hello */}
         {/* <div className="text-orange-500 font-medium tracking-widest text-xl md:text-2xl">

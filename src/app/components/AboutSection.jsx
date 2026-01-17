@@ -25,7 +25,7 @@ const ScrollingImageOverlay = () => {
               <div className="flex justify-center items-center">
             <div ref={imageRef} className="mt-8 flex justify-center">
                 <img
-                src="/images/me.png"
+                src="/images/s.png"
                 alt="Fashion Model"
                 className="w-1/3 rounded-lg shadow-lg"
                 />
