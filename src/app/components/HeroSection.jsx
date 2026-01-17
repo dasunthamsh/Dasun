@@ -6,17 +6,19 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="h-screen w-full bg-black text-white flex items-center justify-center ">
-     <div className="relative h-full mx-auto text-center px-6 pt-24 w-[75%] max-w-[1100px]">
+     <div className="relative h-full mx-auto text-center px-6 pt-24 w-[100%] sm:w-[60%] max-w-[1100px]">
 
 
 
-              <img
-                src="/images/s.png"
-                alt="Dasun Thamash"
-                
-                className="absolute  bottom-0 left-1/2 -translate-x-1/2 object-cover grayscale brightness-75 contrast-110 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 z-10"
-                priority
-            />
+             <img
+  src="/images/s.png"
+  alt="Dasun Thamash"
+  className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover grayscale brightness-75 contrast-110 group-hover:grayscale-0 group-hover:brightness-100 group-hover:contrast-100 group-hover:scale-105 transition-all duration-500 z-10
+    sm:w-[100%]  w-[140%]  /* 80% width on mobile, auto on larger screens */
+    max-w-[2000px]  /* Max width on mobile */
+    h-auto"
+  priority
+/>
 
             
 
@@ -30,6 +32,7 @@ export default function Home() {
         </div> */}
 
         {/* Main name - big & bold */}
+         
             <h1 className="text-7xl sm:text-9xl font-black tracking-tight text-orange-600 my-30  ">
                 DASUN <br /> THAMASH
         
@@ -41,7 +44,7 @@ export default function Home() {
 
         <div className='z-20 absolute left-0 right-0'>
         <div className="max-w-3xl mx-auto ">
-          <p className="text-center font-nimbus  mt-5">
+          <p className="text-center font-nimbus m-4 ">
           I'm a creative UI/UX Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions and continuously improving my skills.
           </p>
         </div>
