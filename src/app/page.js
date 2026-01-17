@@ -28,10 +28,12 @@ export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center font-sans bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
       <main className="w-full">
-        <Header/>
-        
+
+        <section className=" z-20">
+          <Header/>
+        </section>
         {/* Hero Section */}
-        <section id="home" className="relative">
+        <section id="home" className="relative z-10">
           <HeroSection/>
         </section>
 

@@ -19,17 +19,17 @@ const blogs = [
   },
   {
     id: 3,
-    title: 'Tips',
+    title: 'Roadmap',
     excerpt:
       'Best practices for creating visually stunning and user-friendly portfolio websites.',
     image: '/images/v3.png',
   },
    {
     id: 4,
-    title: 'UI/UX Tips',
+    title: 'Fonts',
     excerpt:
       'Best practices for creating visually stunning and user-friendly portfolio websites.',
-    image: '/images/v4.png',
+    image: '/images/fonts.jpg',
   },
 ];
 

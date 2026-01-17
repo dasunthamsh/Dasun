@@ -22,24 +22,27 @@ const ScrollingImageOverlay = () => {
                 </div>
 
                 {/* Hero section with image */}
-                <div className="relative flex flex-col items-center justify-center min-h-[60vh] overflow-hidden">
-                    <div ref={imageRef} className="mt-8">
-                        <img
-                            src="/images/me.png"
-                            alt="Fashion Model"
-                            className="w-2xl rounded-lg shadow-lg"
-                        />
-                    </div>
-                </div>
+              <div className="flex justify-center items-center">
+            <div ref={imageRef} className="mt-8 flex justify-center">
+                <img
+                src="/images/me.png"
+                alt="Fashion Model"
+                className="w-1/3 rounded-lg shadow-lg"
+                />
+            </div>
+         </div>
+
 
                 {/* Content with virtually no gap */}
                 <div className="pt-2">
                     <div className="mb-6">
                         <p className="text-center font-nimbus text-gray-500 text-lg mt-5">
-                            I'm on the cutting edge of no-code tools that allow me to bring my creative visions to life. 
-                            Though my methods may<br /> be unconventional, my dedication to the craft is unparalleled. 
+                            As a UI / UX designer and passionate frontend developer, I am committed to
+                            creating innovative solutions and exploring emerging <br />technologies. With my
+                            hardworking nature and strong work ethic, I am dedicated to delivering<br /> highquality work on time.
                             I thrive on finding "unexpected solutions" and believe<br /> that with the right perspective, 
                             design can elevate the human experience.
+
                         </p>
                     </div>
 
