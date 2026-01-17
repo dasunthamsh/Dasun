@@ -2,7 +2,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-
+        
 
 const ScrollingImageOverlay = () => {
     const textRef = useRef(null);
@@ -12,7 +12,7 @@ const ScrollingImageOverlay = () => {
 
 
     return (
-        <div className=" text-white overflow-x-hidden" ref={containerRef}>
+        <div className=" text-white overflow-x-hidden bg-black" ref={containerRef}>
             <div className="mx-5">
                 {/* Title at the top */}
                 <div className="pt-12 pb-8 text-center">

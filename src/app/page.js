@@ -38,7 +38,7 @@ export default function Home() {
         </section>
 
         {/* About Section - Check if AboutSection is the same as ScrollingImageOverlay */}
-        <section id="about" className=" relative">
+        <section id="about" className=" relative z-20">
           <AboutSection/>
         </section>
 
