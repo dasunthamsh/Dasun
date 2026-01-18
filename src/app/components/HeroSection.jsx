@@ -39,10 +39,10 @@ export default function Home() {
         {/* Name */}
         <h1 className="text-8xl sm:text-9xl font-black tracking-tight my-20 
           bg-gradient-to-r from-orange-700 to-orange-500 bg-clip-text text-transparent">
-          DASUN <br /> THAMASH
+          DASUN <br /> THAMASH.
         </h1>
 
-        {/* Content container */}
+        {/* Content container */} 
         <div className='z-20 absolute left-0 right-0'>
           <div className="max-w-3xl mx-auto">
             <p className="text-center font-nimbus m-4">

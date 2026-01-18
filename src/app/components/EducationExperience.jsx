@@ -124,7 +124,7 @@ const EducationExperience = () => {
               className="relative"
             >
               <div 
-                className="flex items-start group cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-gray-800/30 rounded-lg p-4 -mx-4"
+                className="flex items-start group cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-gray-800/30 rounded-lg p-2 -mx-4"
                 onMouseEnter={(e) => handleMouseEnter(item, e)}
                 onMouseLeave={handleMouseLeave}
               >

@@ -12,7 +12,7 @@ const ScrollingImageOverlay = () => {
 
 
     return (
-        <div className=" text-white overflow-x-hidden bg-[#0A0A0A]" ref={containerRef}>
+        <div className="text-white overflow-x-hidden bg-gradient-to-b from-black to-[#0A0A0A]" ref={containerRef}>
             <div className="mx-5">
                 {/* Title at the top */}
                 <div className="pt-12 pb-8 text-center">

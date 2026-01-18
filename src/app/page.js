@@ -45,17 +45,17 @@ export default function Home() {
         </section>
 
         {/* Brand Carousel */}
-        <section className="mt-44 relative">
+        <section className="mt-20 relative">
           <LogoCarousel/>
         </section>
 
         {/* Education & Experience */}
-        <section id="education" className="mt-44 relative">
+        <section id="education" className="mt-20 relative">
           <EducationExperience/>
         </section>
 
         {/* Projects */}
-        <section id="projects" className="mt-44 relative">
+        <section id="projects" className="mt-20 relative">
           <Projects/>
         </section>
 

@@ -31,7 +31,7 @@ const columns = [
 
 const Column = ({ images, direction, offset = 0 }) => {
   return (
-    <div className="relative h-screen overflow-hidden ">
+    <div className="relative h-screen  overflow-hidden ">
       <div
         className={`flex flex-col gap-1 md:gap-3 animate-vertical-${direction}`}
         style={{ animationDelay: `${offset}s` }}
@@ -55,6 +55,7 @@ const ProjectsSlider = () => {
     <div
       id="contact"
       className="flex w-full w-full overflow-hidden"
+      
     >
       <section className="w-1/3 md:1/4 p-1 md:p-3">
         <Column images={columns[0]} direction="up" offset={0} />

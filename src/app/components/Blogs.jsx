@@ -22,7 +22,7 @@ const blogs = [
     title: 'Roadmap',
     excerpt:
       'Best practices for creating visually stunning and user-friendly portfolio websites.',
-    image: '/images/roadmap.png',
+    image: '/images/roadmap.jpg',
   },
    {
     id: 4,
@@ -37,7 +37,7 @@ const BlogSection = () => {
   return (
     <section
       id="blog"
-      className="w-full bg-black px-6 py-20 text-white"
+      className="w-full  px-6 py-20 text-white"
     >
       {/* Header */}
       <div className="mx-auto mb-12 max-w-5xl text-center">
