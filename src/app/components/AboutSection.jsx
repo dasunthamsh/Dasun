@@ -106,7 +106,7 @@ const ScrollingImageOverlay = () => {
 
 
                     <div className="flex justify-center m-10">
-                        <a href="/resume.pdf" download="Dasun_Resume.pdf">
+                        <a href="/images/Dasun Thamash CV.pdf" download="Dasun_Resume.pdf">
                             <button className="bg-black hover:bg-white text-white hover:text-black font-bold py-2 px-4 rounded-full border-2 border-white transition-colors duration-300">
                                 Download Resume
                             </button>
