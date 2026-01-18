@@ -103,17 +103,9 @@ const EducationExperience = () => {
         <h1 
           data-aos="fade-right" 
           data-aos-duration="2000"
-          className="text-center md:text-left"
+          className="text-center md:text-left  bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent"
         >
-          Education
-        </h1>
-        <h1 className="items-center hidden md:block">&</h1>
-        <h1 
-          data-aos="fade-left" 
-          data-aos-duration="2000"
-          className="text-center md:text-end"
-        >
-          Experience
+          Education & Experience
         </h1>
       </div>
 

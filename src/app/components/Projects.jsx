@@ -93,8 +93,18 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4">
-      <h1 className="text-5xl font-bold self-center mb-20 ">Turning Ideas into Products</h1>
-      
+
+      <div className="mx-auto  max-w-5xl text-center">
+        <h2 className="text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Turning Ideas into Products</h2>
+        <p className="mt-4 text-gray-400">
+          A collection of projects that showcase my skills. Each project represents a journey of learning and innovation.
+        </p>
+      </div>
+
+      <h1 className="text-5xl font-bold self-center mb-20 "></h1>
+      <p className="mt-4 text-gray-400">
+        
+        </p>
       <div className="w-full max-w-6xl">
         <Carousel
           items={items}

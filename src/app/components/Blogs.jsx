@@ -22,7 +22,7 @@ const blogs = [
     title: 'Roadmap',
     excerpt:
       'Best practices for creating visually stunning and user-friendly portfolio websites.',
-    image: '/images/v3.png',
+    image: '/images/roadmap.png',
   },
    {
     id: 4,

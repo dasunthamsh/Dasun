@@ -26,12 +26,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans bg-black overflow-hidden">
+    <div className="flex min-h-screen items-center justify-center font-sans bg-[#0A0A0A] overflow-hidden">
       <main className="w-full">
 
         <section className=" z-20">
           <Header/>
         </section>
+
+        
         {/* Hero Section */}
         <section id="home" className="relative z-10">
           <HeroSection/>
