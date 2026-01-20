@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn, FaFacebookF, FaWhatsapp } from 'react-icons/fa'
 const ContactSection = () => {
   const [emailCopied, setEmailCopied] = useState(false);
   const emailAddress = "dasunthamash166@gmail.com";
-  const whatsappNumber = "94786654356"; // Sri Lanka format with country code
+  const whatsappNumber = "0784369667"; // Sri Lanka format with country code
 
   const handleCopyEmail = async () => {
     try {
@@ -124,7 +124,7 @@ const ContactSection = () => {
       </div>
 
       <div className='pt-14 z-10 mt-8'>
-        <h6 className="text-gray-400 text-sm">Copyright © 2025 DevGent. All Rights Reserved</h6>
+        <h6 className="text-gray-400 text-sm">Thanks for looking. Stay in touch.</h6>
       </div>
 
     </div>

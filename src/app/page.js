@@ -63,13 +63,13 @@ export default function Home() {
           <VlogsSection/>
         </section>
 
-        <section className="mt-44 relative">
+        <section className="mt-20 relative">
           <ProjectsSlider/>
         </section>
 
        
         {/* Contact */}
-        <section id="contact" className="mt-44 relative">
+        <section id="contact" className=" relative">
           <ContactSection/>
         </section>
       </main>

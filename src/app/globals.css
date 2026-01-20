@@ -67,9 +67,9 @@ body {
 }
 
 .animate-vertical-up {
-  animation: scroll-up 90s linear infinite;
+  animation: scroll-up 60s linear infinite;
 }
 
 .animate-vertical-down {
-  animation: scroll-down 90s linear infinite;
+  animation: scroll-down 60s linear infinite;
 }

@@ -29,7 +29,7 @@ export default function Home() {
           src="/images/s.png"
           alt="Dasun Thamash"
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover grayscale brightness-75 contrast-110 transition-all duration-500 z-10 
-          sm:w-[100%] w-[250%] max-w-[2000px] h-auto"
+          w-[250%] max-w-[1000px] h-auto"
           priority
         />
 
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-orange-500 blur-[350px] w-86 h-86 opacity-70"></div>
 
         {/* Name */}
-        <h1 className="text-8xl sm:text-9xl font-black tracking-tight my-20 
+        <h1 className="text-8xl sm:text-9xl font-black tracking-tight my-20 pb-40 
           bg-gradient-to-r from-orange-700 to-orange-500 bg-clip-text text-transparent">
           DASUN <br /> THAMASH.
         </h1>
@@ -45,7 +45,7 @@ export default function Home() {
         {/* Content container */} 
         <div className='z-20 absolute left-0 right-0'>
           <div className="max-w-3xl mx-auto">
-            <p className="text-center font-nimbus m-4">
+            <p className="text-center font-nimbus m-4 ">
               I'm a creative UI/UX Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions and continuously improving my skills.
             </p>
           </div>

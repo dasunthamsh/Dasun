@@ -5,24 +5,24 @@ import React from 'react';
 const blogs = [
   {
     id: 1,
-    title: 'Skyline',
+    title: 'Icons',
     excerpt:
       'Learn how to create smooth, performant animations in React using CSS and modern animation libraries.',
     image: '/images/v1.png',
   },
   {
     id: 2,
-    title: 'Building',
+    title: 'Plugins',
     excerpt:
       'A step-by-step guide to building infinite vertical sliders using pure CSS and Tailwind.',
-    image: '/images/v2.png',
+    image: '/images/plugins.jpg',
   },
   {
     id: 3,
     title: 'Roadmap',
     excerpt:
       'Best practices for creating visually stunning and user-friendly portfolio websites.',
-    image: '/images/roadmap.jpg',
+    image: '/images/uiuxroadmap.jpg',
   },
    {
     id: 4,

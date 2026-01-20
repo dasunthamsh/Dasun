@@ -70,8 +70,8 @@ const Header = () => {
 
   return (
     <>
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50">
-  <div className="bg-[#171717] backdrop-blur-xl rounded-full shadow-2xl px-4 py-2">
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 ">
+  <div className="bg-[#171717]  backdrop-blur-xl rounded-full shadow-2xl px-4 py-2">
     <div className="flex items-center gap-6">
             
             {/* Logo */}
@@ -130,7 +130,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors duration-300"
+              className="md:hidden flex  p-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors duration-300"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -200,7 +200,7 @@ const Header = () => {
               <div className="pt-8 border-t border-white/10">
                 <button
                   onClick={() => handleNavClick('#contact', 'contact')}
-                  className="w-full py-3 px-6 rounded-full bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 transition-all duration-300 text-white font-medium"
+                  className="w-full py-3 px-6 rounded-full bg-black text-white font-medium"
                 >
                   Contact Me
                 </button>
