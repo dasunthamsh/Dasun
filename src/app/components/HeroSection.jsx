@@ -29,7 +29,7 @@ export default function Home() {
           src="/images/s.png"
           alt="Dasun Thamash"
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover grayscale brightness-75 contrast-110 transition-all duration-500 z-10 
-          w-[250%] max-w-[1000px] h-auto"
+          sm:w-[250%] max-w-[1000px] w-[200%] h-auto"
           priority
         />
 
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-orange-500 blur-[350px] w-86 h-86 opacity-70"></div>
 
         {/* Name */}
-        <h1 className="text-8xl sm:text-9xl font-black tracking-tight my-20 pb-40 
+        <h1 className="text-8xl sm:text-9xl font-black tracking-tight my-20 pb-40 z-50
           bg-gradient-to-r from-orange-700 to-orange-500 bg-clip-text text-transparent">
           DASUN <br /> THAMASH.
         </h1>
