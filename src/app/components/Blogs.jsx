@@ -1,83 +1,102 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
-const blogs = [
+const designs = [
   {
-    id: 1,
-    title: 'Icons',
-    excerpt:
-      'Learn how to create smooth, performant animations in React using CSS and modern animation libraries.',
-    image: '/images/v1.png',
+    id: 1,  
+    image: '/images/post/p8.jpeg',
   },
   {
     id: 2,
-    title: 'Plugins',
-    excerpt:
-      'A step-by-step guide to building infinite vertical sliders using pure CSS and Tailwind.',
-    image: '/images/plugins.jpg',
+    image: '/images/post/d2.jpeg',
   },
   {
     id: 3,
-    title: 'Roadmap',
-    excerpt:
-      'Best practices for creating visually stunning and user-friendly portfolio websites.',
-    image: '/images/uiuxroadmap.jpg',
+    image: '/images/post/p5.jpeg',
   },
-   {
+  {
     id: 4,
-    title: 'Fonts',
-    excerpt:
-      'Best practices for creating visually stunning and user-friendly portfolio websites.',
-    image: '/images/fonts.jpg',
+    image: '/images/post/p4.jpeg',
   },
+  {
+    id: 5,
+    image: '/images/post/p3.jpeg',
+  },
+  {
+    id: 6,
+    image: '/images/post/p6.jpeg',
+  },
+  {
+    id: 7,
+    image: '/images/post/p7.jpeg',
+  },
+  {
+    id: 8,
+    image: '/images/post/p1.jpeg',
+  }
 ];
 
-const BlogSection = () => {
+const DesignSection = () => {
   return (
-    <section
-      id="blog"
-      className="w-full  px-6 py-20 text-white"
-    >
+    <section id="designs" className="w-full px-6 py-20 text-white">
       {/* Header */}
-      <div className="mx-auto mb-12 max-w-5xl text-center">
-        <h2 className="text-4xl font-bold">Latest Blog Posts</h2>
+      
+
+        <div className="mx-auto max-w-5xl text-center mb-20">
+        <h2 className="text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+         My Design Work
+        </h2>
         <p className="mt-4 text-gray-400">
-          Insights, tutorials, and thoughts on design & development
+         Explore my collection of graphic design projects and creative works
         </p>
       </div>
 
-      {/* Blog Grid */}
-      <div className="mx-auto grid max-w-6xl gap-4 md:grid-cols-2 lg:grid-cols-4">
-        {blogs.map((blog) => (
-
-          <div>
-          <article
-            key={blog.id}
-            className="group overflow-hidden rounded-2xl "
-          >
-            {/* Image */}
-            <div className="overflow-hidden">
-              <img
-                src={blog.image}
-                alt={blog.title}
-                className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
+      {/* Designs Grid - 4 columns, 2 rows */}
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 md:grid-cols-4">
+        {designs.map((design) => (
+          <Link href="/designs" key={design.id}>
+            <div className="group cursor-pointer">
+              <article className="overflow-hidden rounded-2xl bg-gray-800 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
+                {/* Image with increased height */}
+                <div className="overflow-hidden aspect-[3/4]">
+                  <img
+                    src={design.image}
+                    alt="Design work"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+              </article>
             </div>
-
-            {/* Content */}
-             
-             
-          </article>
-           <h6 className="m-2 text-xs ">
-                {blog.title}
-              </h6>
-          </div>
-          
+          </Link>
         ))}
       </div>
+
+      {/* View All Button */}
+      {/* <div className="mt-12 text-center">
+        <Link
+          href="/designs"
+          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-8 py-3 text-white font-semibold transition-transform hover:scale-105"
+        >
+          View All Designs
+          <svg
+            className="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </Link>
+      </div> */}
     </section>
   );
 };
 
-export default BlogSection;
+export default DesignSection;

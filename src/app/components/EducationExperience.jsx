@@ -10,8 +10,8 @@ const EducationExperience = () => {
       id: 1,
       number: "1",
       title: "AUS-ETECH (Australia)",
-      description: "Work as intern software engineer.",
-      detailedDescription: "Intern Software Engineer at Australian tech company specializing in e-commerce solutions. Gained hands-on experience with React, Node.js, and AWS cloud services while working on real-world projects.",
+      description: "Work as Designer AND Developer",
+      detailedDescription: "Graphic design–focused professional with a strong foundation in visualstorytelling, branding, and intuitive icon creation.",
       period: "Feb 2024 - Oct 2024",
       type: "experience",
       aosAnimation: "zoom-out",
@@ -21,8 +21,8 @@ const EducationExperience = () => {
       id: 2,
       number: "2",
       title: "GZONE",
-      description: "Work as UI UX engineer.",
-      detailedDescription: "UI/UX Engineer working on mobile and web applications. Conducted user research, created wireframes and prototypes, and collaborated with development teams to implement responsive designs.",
+      description: "Work as Designer.",
+      detailedDescription: "Graphic design–driven UI/UX designer who crafted a live streamingecosystem for gamers,.",
       period: "Feb 2025 - Apr 2025",
       type: "experience",
       aosAnimation: "zoom-out",
@@ -54,7 +54,7 @@ const EducationExperience = () => {
       id: 5,
       number: "5",
       title: "DSMP",
-      description: "Fullstack Master Program Developer stack.",
+      description: "DESIGNING & DEVELOPMENT  MASTER PROGRAM.",
       detailedDescription: "Comprehensive full-stack development program covering frontend (React, Vue), backend (Node.js, Express), databases (MongoDB, PostgreSQL), and DevOps (Docker, CI/CD).",
       period: "Jan 2023 - Sep 2023",
       type: "education",
@@ -65,7 +65,7 @@ const EducationExperience = () => {
       id: 6,
       number: "6",
       title: "FSD ACADEMY",
-      description: "Master UI/UX Designing Course",
+      description: "DESIGNING MASTER",
       detailedDescription: "Advanced UI/UX design course covering user research, wireframing, prototyping, design systems, and usability testing using Figma and Adobe XD.",
       period: "Sep 2023 - Jan 2024",
       type: "education",
@@ -129,7 +129,7 @@ const EducationExperience = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 {/* Number Circle */}
-                <div className={`flex items-center justify-center w-10 h-10 text-lg font-bold rounded-full flex-shrink-0 transition-all duration-300 ${
+                <div className={`flex items-center justify-center w-10 h-10 text-md font-bold rounded-full flex-shrink-0 transition-all duration-300 ${
                   item.type === 'education' 
                     ? 'bg-[#171717]' 
                     : 'bg-[#171717]'
@@ -140,7 +140,7 @@ const EducationExperience = () => {
                 {/* Content */}
                 <div className="ml-4">
                   <div className="flex items-center gap-3">
-                    <h2 className="text-lg font-semibold tracking-wider group-hover:text-blue-300 transition-colors duration-300">
+                    <h2 className="text-md font-semibold tracking-wider group-hover:text-blue-300 transition-colors duration-300">
                       {item.title}
                     </h2>
                     <span className={`text-xs px-2 py-1 rounded-full ${
