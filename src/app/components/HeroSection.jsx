@@ -46,7 +46,7 @@ export default function Home() {
         <div className='z-20 absolute left-0 right-0'>
           <div className="max-w-3xl mx-auto">
             <p className="text-center font-nimbus m-4 ">
-              I'm a creative UI/UX Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions and continuously improving my skills.
+              I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions and continuously improving my skills.
             </p>
           </div>
         </div>

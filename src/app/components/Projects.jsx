@@ -94,7 +94,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid - 4 columns on desktop */}
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-6 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {items.map((item) => {
             const isClickable = item.url && item.url !== "";
             const [isHovered, setIsHovered] = useState(false);

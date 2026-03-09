@@ -37,7 +37,7 @@ const ScrollingImageOverlay = () => {
                 <div className="pt-2">
                     <div className="mb-6">
                         <p className="text-center font-nimbus text-gray-500 text-lg mt-5">
-                            As a UI / UX designer and passionate frontend developer, I am committed to
+                            As a designer and passionate frontend developer, I am committed to
                             creating innovative solutions and exploring emerging <br />technologies. With my
                             hardworking nature and strong work ethic, I am dedicated to delivering<br /> highquality work on time.
                             I thrive on finding "unexpected solutions" and believe<br /> that with the right perspective, 
