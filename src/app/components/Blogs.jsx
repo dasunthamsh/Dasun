@@ -10,7 +10,7 @@ const designs = [
   },
   {
     id: 2,
-    image: '/images/post/p9.png',
+    image: '/images/post/p10.png',
   },
   {
     id: 3,
@@ -18,7 +18,7 @@ const designs = [
   },
   {
     id: 4,
-    image: '/images/post/p4.jpeg',
+    image: '/images/post/p9.png',
   },
   {
     id: 5,
@@ -34,11 +34,11 @@ const designs = [
   },
   {
     id: 8,
-    image: '/images/post/p10.png',
+    image: '/images/post/d2.jpeg',
   },
    {
     id: 8,
-    image: '/images/post/d2.jpeg',
+    image: '/images/post/p4.jpeg',
   },
    {
     id: 8,

@@ -5,54 +5,11 @@ import React from 'react';
 import Link from 'next/link';
 
 const allDesigns = [
-  {
-    id: 1,
-    image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 2,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 3,
-    image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 4,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 5,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 6,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 7,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 8,
-    image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 9,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 10,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 11,
-   image: '/images/post/p3.jpeg',
-  },
-  {
-    id: 12,
-    image: '/images/post/p3.jpeg',
-  }
+//   {
+//     id: 1,
+//     image: '/images/post/p3.jpeg',
+//   },
+
 ];
 
 const DesignsPage = () => {
