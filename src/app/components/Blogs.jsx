@@ -10,7 +10,7 @@ const designs = [
   },
   {
     id: 2,
-    image: '/images/post/d2.jpeg',
+    image: '/images/post/p9.png',
   },
   {
     id: 3,
@@ -34,6 +34,14 @@ const designs = [
   },
   {
     id: 8,
+    image: '/images/post/p10.png',
+  },
+   {
+    id: 8,
+    image: '/images/post/d2.jpeg',
+  },
+   {
+    id: 8,
     image: '/images/post/p1.jpeg',
   }
 ];
@@ -54,9 +62,13 @@ const DesignSection = () => {
       </div>
 
       {/* Designs Grid - 4 columns, 2 rows */}
+
+
+    
+     
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 md:grid-cols-4">
         {designs.map((design) => (
-          <Link href="/designs" key={design.id}>
+          <Link href="/Designs" key={design.id}>
             <div className="group cursor-pointer">
               <article className="overflow-hidden rounded-2xl bg-gray-800 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/20">
                 {/* Image with increased height */}
@@ -72,6 +84,15 @@ const DesignSection = () => {
           </Link>
         ))}
       </div>
+
+     <div className='flex justify-center pt-20'>
+  <Link href="/Designs">
+    <button className='group relative px-8 py-3 overflow-hidden rounded-full bg-amber-50 opacity-50 text-white font-semibold text-lg shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 ease-in-out'>
+      <span className='relative z-10 text-black'>View All</span>
+      <div className='absolute inset-0 '></div>
+    </button>
+  </Link>
+</div>
 
       {/* View All Button */}
       {/* <div className="mt-12 text-center">

@@ -37,7 +37,8 @@ export default function Home() {
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-orange-500 blur-[350px] sm:w-86 sm:h-86 w-52 h-52 opacity-70"></div>
 
         {/* Name */}
-        <h1 className="text-8xl sm:text-9xl font-black tracking-tight sm:my-20 sm:pb-40 pb-80 z-50
+
+        <h1 className="text-8xl  sm:text-9xl font-black tracking-tight sm:my-20 sm:pb-40 pb-80 z-50
           bg-gradient-to-r from-orange-700 to-orange-500 bg-clip-text text-transparent">
           DASUN <br /> THAMASH.
         </h1>

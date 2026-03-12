@@ -65,21 +65,21 @@ const ScrollingImageOverlay = () => {
                         </div>
                         <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
                              <img
-                            src="/images/next.png"
+                            src="/images/framer.png "
                             alt="Fashion Model"
                             className="w-9 rounded-lg shadow-lg"
                         />
                         </div>
                          <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
                              <img
-                            src="/images/framer.png"
+                            src="/images/premiere-pro.png"
                             alt="Fashion Model"
                             className="w-12 rounded-lg shadow-lg"
                         />
                         </div>
                          <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
                              <img
-                            src="/images/webflo.png"
+                            src="/images/illustrator.png"
                             alt="Fashion Model"
                             className="w-10 rounded-lg shadow-lg"
                         />
