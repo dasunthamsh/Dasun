@@ -1,30 +1,29 @@
 'use client'
 
-import Script from 'next/script';
+import { useEffect, useState } from "react";
 
 export default function VisitorCounter() {
+  const [visits, setVisits] = useState(null);
+
+  useEffect(() => {
+    const updateCounter = async () => {
+      try {
+        const res = await fetch(
+          "https://api.countapi.xyz/hit/dasun-blue-portfolio/visits"
+        );
+        const data = await res.json();
+        setVisits(data.value);
+      } catch (error) {
+        console.error("Counter error:", error);
+      }
+    };
+
+    updateCounter();
+  }, []);
+
   return (
-    <>
-      <Script
-        src="https://www.freevisitorcounters.com/auth.php?id=c63ab11cc15f7c9ac4e2482bf9708e48598bbdf4"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="https://www.freevisitorcounters.com/en/home/counter/1517508/t/3"
-        strategy="afterInteractive"
-      />
-      
-      <div className="fixed bottom-4 right-4 bg-black/50 text-white px-4 py-2 rounded-lg backdrop-blur-sm z-50 text-sm flex items-center gap-2">
-        <a 
-          href='http://www.freevisitorcounters.com' 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-gray-300 hover:text-white"
-        >
-          Visitors:
-        </a>
-        <div id="visitor-counter" className="font-mono"></div>
-      </div>
-    </>
+    <div className="text-center text-gray-400 text-sm mt-6">
+      👁 Visitors: {visits ? visits : "Loading..."}
+    </div>
   );
 }

@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Header from "./components/Header";
 import ProjectsSlider from './components/ProjectsSlider';
 import VlogsSection from './components/Blogs';
+import VisitorCounter from './components/VisitorCounter';
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -67,6 +68,11 @@ export default function Home() {
 
         {/* Add this line */}
         <Analytics />
+
+              <section id="home" className="relative z-10">
+        
+        <VisitorCounter/>
+      </section>
 
       </main>
     </div>
