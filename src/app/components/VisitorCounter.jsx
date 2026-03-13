@@ -1,74 +1,30 @@
 'use client'
 
-import React, { useEffect, useState } from 'react';
+import Script from 'next/script';
 
-const VisitorCounter = ({ count }) => {
-  const [animatedCount, setAnimatedCount] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    // Animate the count
-    if (count > 0) {
-      setIsVisible(true);
-      let start = 0;
-      const duration = 1500; // 1.5 seconds
-      const increment = count / (duration / 16); // 60fps
-      
-      let timer = setInterval(() => {
-        start += increment;
-        if (start >= count) {
-          setAnimatedCount(count);
-          clearInterval(timer);
-        } else {
-          setAnimatedCount(Math.floor(start));
-        }
-      }, 16);
-
-      return () => clearInterval(timer);
-    }
-  }, [count]);
-
-  // Format the count with commas
-  const formattedCount = animatedCount.toLocaleString();
-
+export default function VisitorCounter() {
   return (
-    <div className={` text-white px-4 py-2 rounded-lg shadow-lg transition-all duration-500 transform hover:scale-105 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-      <div className="flex items-center space-x-2">
-        {/* Eye icon for visitors */}
-        <svg 
-          className="w-5 h-5" 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
+    <>
+      <Script
+        src="https://www.freevisitorcounters.com/auth.php?id=c63ab11cc15f7c9ac4e2482bf9708e48598bbdf4"
+        strategy="afterInteractive"
+      />
+      <Script
+        src="https://www.freevisitorcounters.com/en/home/counter/1517508/t/3"
+        strategy="afterInteractive"
+      />
+      
+      <div className="fixed bottom-4 right-4 bg-black/50 text-white px-4 py-2 rounded-lg backdrop-blur-sm z-50 text-sm flex items-center gap-2">
+        <a 
+          href='http://www.freevisitorcounters.com' 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-gray-300 hover:text-white"
         >
-          <path 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
-            strokeWidth={2} 
-            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" 
-          />
-          <path 
-            strokeLinecap="round" 
-            strokeLinejoin="round" 
-            strokeWidth={2} 
-            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" 
-          />
-        </svg>
-        
-        
-        <span className="text-lg font-bold tabular-nums">
-          {formattedCount}
-        </span>
+          Visitors:
+        </a>
+        <div id="visitor-counter" className="font-mono"></div>
       </div>
-
-      {/* Optional tooltip */}
-      <div className="absolute bottom-full right-0 mb-2 hidden group-hover:block">
-        <div className="bg-gray-900 text-white text-xs rounded py-1 px-2 whitespace-nowrap">
-          Unique visitors since {new Date().toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
-        </div>
-      </div>
-    </div>
+    </>
   );
-};
-
-export default VisitorCounter;
+}
