@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import HeroSection from "@/app/components/HeroSection";
 import AboutSection from "@/app/components/AboutSection";
 import EducationExperience from "./components/EducationExperience";
@@ -10,11 +10,11 @@ import Projects from "./components/Projects";
 import Header from "./components/Header";
 import ProjectsSlider from './components/ProjectsSlider';
 import VlogsSection from './components/Blogs';
-import VisitCounter from './components/VisitCounter';
-import VisitCounterBadge from './components/VisitCounterBadge';
+import VisitorCounter from './components/VisitorCounter'; // New component
 
 export default function Home() {
-  
+  const [visitorCount, setVisitorCount] = useState(0);
+
   useEffect(() => {
     // This ensures sections have proper IDs for navigation
     const sections = [
@@ -24,11 +24,44 @@ export default function Home() {
       { id: 'education' },
       { id: 'contact' },
     ];
+
+    // Visitor counter logic
+    const updateVisitorCount = () => {
+      // Get existing count from localStorage
+      let count = localStorage.getItem('visitorCount');
+      
+      // Check if this is a new session
+      const hasVisited = sessionStorage.getItem('hasVisited');
+      
+      if (!hasVisited) {
+        // New session - increment count
+        if (count) {
+          count = parseInt(count) + 1;
+        } else {
+          count = 1;
+        }
+        
+        // Store the updated count
+        localStorage.setItem('visitorCount', count.toString());
+        sessionStorage.setItem('hasVisited', 'true');
+      } else {
+        // Returning session - just get the count
+        count = count ? parseInt(count) : 0;
+      }
+      
+      setVisitorCount(count);
+    };
+
+    updateVisitorCount();
   }, []);
 
   return (
     <div className="flex min-h-screen items-center justify-center font-sans bg-[#0A0A0A] overflow-hidden">
       <main className="w-full">
+        {/* Visitor Counter - Floating element */}
+        <div className="fixed bottom-4 right-4 z-50">
+          <VisitorCounter count={visitorCount} />
+        </div>
 
         <section className="z-20">
           <Header/>
@@ -70,17 +103,6 @@ export default function Home() {
         <section id="contact" className="relative">
           <ContactSection/>
         </section>
-
-        {/* Add visit counter in footer */}
-        <footer className="py-4 px-6 border-t border-gray-800 mt-10">
-          <div className="container mx-auto flex justify-between items-center text-gray-400 text-sm">
-            <span>© 2024 Your Portfolio</span>
-            <VisitCounter variant="detailed" />
-          </div>
-        </footer>
-
-        {/* Optional: Floating badge counter */}
-        <VisitCounterBadge />
       </main>
     </div>
   );
