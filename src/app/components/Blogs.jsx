@@ -34,7 +34,7 @@ const designs = [
   },
   {
     id: 8,
-    image: '/images/post/d2.jpeg',
+    image: '/images/post/p1.jpeg',
   },
    {
     id: 8,
@@ -42,7 +42,7 @@ const designs = [
   },
    {
     id: 8,
-    image: '/images/post/p1.jpeg',
+    image: '/images/post/p11.png',
   }
 ];
 

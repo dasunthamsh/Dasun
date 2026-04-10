@@ -28,17 +28,17 @@ const EducationExperience = () => {
       aosAnimation: "zoom-out",
       aosDuration: "2000"
     },
-    // {
-    //   id: 3,
-    //   number: "3",
-    //   title: "(TOP UP) London Metropolitan University",
-    //   description: "BEng (Hons) in Software Engineering (TOP UP) <br> London Metropolitan University (UK) (LMU-T-BENG-SE).",
-    //   detailedDescription: "Top-up degree focusing on advanced software engineering principles, software architecture, and project management. Final year project involved developing a scalable microservices architecture.",
-    //   period: "Feb 2025 - Feb 2026",
-    //   type: "education",
-    //   aosAnimation: "zoom-out",
-    //   aosDuration: "2000"
-    // },
+    {
+      id: 3,
+      number: "3",
+      title: "(TOP UP) London Metropolitan University",
+      description: "BEng (Hons) in Software Engineering (TOP UP) <br> London Metropolitan University (UK) (LMU-T-BENG-SE).",
+      detailedDescription: "Top-up degree focusing on advanced software engineering principles, software architecture, and project management. Final year project involved developing a scalable microservices architecture.",
+      period: "Feb 2025 - Feb 2026",
+      type: "education",
+      aosAnimation: "zoom-out",
+      aosDuration: "2000"
+    },
     {
       id: 4,
       number: "4",

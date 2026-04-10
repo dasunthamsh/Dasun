@@ -5,10 +5,54 @@ import React from 'react';
 import Link from 'next/link';
 
 const allDesigns = [
-//   {
-//     id: 1,
-//     image: '/images/post/p3.jpeg',
-//   },
+{
+    id: 1,  
+    image: '/images/post/p8.jpeg',
+  },
+  {
+    id: 2,
+    image: '/images/post/p10.png',
+  },
+  {
+    id: 3,
+    image: '/images/post/p5.jpeg',
+  },
+  {
+    id: 4,
+    image: '/images/post/p9.png',
+  },
+  {
+    id: 5,
+    image: '/images/post/p3.jpeg',
+  },
+  {
+    id: 6,
+    image: '/images/post/p6.jpeg',
+  },
+  {
+    id: 7,
+    image: '/images/post/p7.jpeg',
+  },
+  {
+    id: 8,
+    image: '/images/post/p1.jpeg',
+  },
+   {
+    id: 8,
+    image: '/images/post/p4.jpeg',
+  },
+   {
+    id: 8,
+    image: '/images/post/p11.png',
+  },
+   {
+    id: 8,
+    image: '/images/post/d2.jpeg',
+  },
+   {
+    id: 8,
+    image: '/images/post/p12.jpg',
+  }
 
 ];
 
