@@ -30,7 +30,7 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
           src="/images/das.png"
           alt="Dasun Thamash"
           className="absolute bottom-0 left-1/2 -translate-x-1/2 object-cover transition-all duration-500 z-10 
-          sm:w-[250%] max-w-[1120px] w-[200%] h-auto"
+          sm:w-[250%] max-w-[1120px] w-[300%] h-auto"
           priority
         />
 
