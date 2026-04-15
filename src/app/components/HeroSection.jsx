@@ -58,12 +58,16 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
         />
 
        
-        {/* Intro text - now above "Dasun" */}
-      <div className="fixed bottom-[15%] left-0 z-20   w-full max-w-[600px]">
-        <p className="font-nimbus text-sm sm:text-xl leading-relaxed font-medium mx-3">
-          I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions.
-        </p>
-      </div>
+    {/* Intro text - hide on scroll like "Dasun" */}
+<div
+  className={`fixed bottom-[15%] left-0 z-20 w-full max-w-[600px] transition-all duration-500 ${
+    showDasunText ? 'opacity-100 visible' : 'opacity-0 invisible'
+  }`}
+>
+  <p className="font-nimbus text-sm sm:text-xl leading-relaxed font-medium mx-3">
+    I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions.
+  </p>
+</div>
 
 
         {/* "Dasun" text at bottom center - hidden when scrolled */}
