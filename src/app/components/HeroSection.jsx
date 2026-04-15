@@ -57,15 +57,15 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
           priority
         />
 
-        {/* Content container - moved to left and bottom */}
-        <div className='absolute bottom-48 sm:bottom-60 left-0 z-20 text-left'>
-          <div className="max-w-sm pl-8">
-            <p className="font-nimbus text-sm sm:text-xl leading-relaxed font-medium">
-              I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions .
-            </p>
-          </div>
-        </div>
-        
+       
+        {/* Intro text - now above "Dasun" */}
+      <div className="fixed bottom-[15%] left-0 z-20   w-full max-w-[600px]">
+        <p className="font-nimbus text-sm sm:text-xl leading-relaxed font-medium text-left mx-3">
+          I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions.
+        </p>
+      </div>
+
+
         {/* "Dasun" text at bottom center - hidden when scrolled */}
         <div 
           className={`fixed sm:-bottom-17 -bottom-6 left-0 right-0 flex justify-center z-20 transition-all duration-500 ${
