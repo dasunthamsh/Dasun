@@ -38,7 +38,7 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
         <div className='absolute bottom-32 sm:bottom-56 left-0 z-20 text-left'>
           <div className="max-w-md pl-8">
             <p className="font-nimbus text-lg leading-relaxed">
-              I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions and continuously improving my skills.
+              I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions .
             </p>
           </div>
         </div>

@@ -42,7 +42,7 @@ export default function Home() {
           <AboutSection/>
         </section>
 
-        <section id="education" className="mt-20 relative">
+        <section id="education" className="mt-20 relative z-20">  
           <EducationExperience/>
         </section>
 
