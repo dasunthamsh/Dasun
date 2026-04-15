@@ -68,11 +68,12 @@ const Header = () => {
     );
   }
 
-  return (
+  // Only modify the header container div - replace line ~62-64
+return (
     <>
-    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 ">
-  <div className="bg-[#171717]  backdrop-blur-xl rounded-full shadow-2xl px-4 py-2">
-    <div className="flex items-center gap-6">
+    <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] md:w-auto">
+  <div className="bg-[#171717] backdrop-blur-xl rounded-full shadow-2xl px-3 py-2 md:px-4 md:py-2 opacity-70">
+    <div className="flex items-center gap-3 md:gap-6">
             
             {/* Logo */}
             <Link 
@@ -89,15 +90,15 @@ const Header = () => {
                 <div className="">
                     <img
                             src="/images/me.png"
-                            alt="Fashion Model"
-                            className=" w-10 h-10 rounded-full object-cover shadow-lg"
+                            alt="Logo"
+                            className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover shadow-lg"
                         />
                 </div>
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
+            {/* Desktop Navigation - hide on mobile */}
+            <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -120,29 +121,30 @@ const Header = () => {
               {/* CTA Button */}
               <button
                 onClick={() => handleNavClick('#contact', 'contact')}
-                className="relative overflow-hidden group px-6 py-2.5 rounded-full bg-white transition-all duration-300 transform hover:scale-105"
+                className="relative overflow-hidden group px-4 py-2 rounded-full bg-white transition-all duration-300 transform hover:scale-105"
               >
-                <span className="text-black hover:text-white font-medium text-sm">Get in Touch</span>
-                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10  transition-opacity duration-300"></div>
+                <span className="text-black hover:text-white font-medium text-sm whitespace-nowrap">Get in Touch</span>
+                <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
               </button>
             </nav>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button - always visible on mobile */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden flex  p-2 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors duration-300"
+              className="md:hidden flex items-center justify-center p-1.5 rounded-lg bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-colors duration-300"
               aria-label="Toggle menu"
             >
               {isOpen ? (
-                <X className="w-6 h-6 text-white" />
+                <X className="w-5 h-5 text-white" />
               ) : (
-                <Menu className="w-6 h-6 text-white" />
+                <Menu className="w-5 h-5 text-white" />
               )}
             </button>
           </div>
         </div>
       </header>
 
+      {/* Rest of your code remains the same */}
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-40 md:hidden">
@@ -154,34 +156,34 @@ const Header = () => {
           
           {/* Menu Panel */}
           <div className="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-gradient-to-b from-black via-black/95 to-black/90 border-l border-white/10 shadow-2xl">
-            <div className="p-8 h-full flex flex-col">
+            <div className="p-6 h-full flex flex-col">
               
               {/* Close Button */}
-              <div className="flex justify-end mb-12">
+              <div className="flex justify-end mb-8">
                 <button
                   onClick={() => setIsOpen(false)}
                   className="p-2 rounded-lg hover:bg-white/10 transition-colors duration-300"
                   aria-label="Close menu"
                 >
-                  <X className="w-6 h-6 text-white" />
+                  <X className="w-5 h-5 text-white" />
                 </button>
               </div>
 
               {/* Mobile Navigation */}
-              <nav className="space-y-6 flex-1">
+              <nav className="space-y-4 flex-1">
                 {navItems.map((item) => (
                   <button
                     key={item.id}
                     onClick={() => handleNavClick(item.href, item.id)}
-                    className="flex items-center justify-between w-full group"
+                    className="flex items-center justify-between w-full group py-2"
                   >
-                    <div className="flex items-center space-x-4">
-                      <div className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    <div className="flex items-center space-x-3">
+                      <div className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
                         activeSection === item.id 
                           ? 'bg-white scale-125' 
                           : 'bg-gray-600 group-hover:bg-gray-500'
                       }`}></div>
-                      <span className={`text-lg font-medium transition-colors duration-300 ${
+                      <span className={`text-base font-medium transition-colors duration-300 ${
                         activeSection === item.id 
                           ? 'text-white' 
                           : 'text-gray-400 group-hover:text-white'
@@ -189,7 +191,7 @@ const Header = () => {
                         {item.label}
                       </span>
                     </div>
-                    <ChevronDown className={`w-5 h-5 text-gray-400 transform rotate-90 transition-transform duration-300 ${
+                    <ChevronDown className={`w-4 h-4 text-gray-400 transform rotate-90 transition-transform duration-300 ${
                       activeSection === item.id ? 'rotate-180' : ''
                     }`} />
                   </button>
@@ -197,24 +199,24 @@ const Header = () => {
               </nav>
 
               {/* Mobile CTA */}
-              <div className="pt-8 border-t border-white/10">
+              <div className="pt-6 border-t border-white/10">
                 <button
                   onClick={() => handleNavClick('#contact', 'contact')}
-                  className="w-full py-3 px-6 rounded-full bg-black text-white font-medium"
+                  className="w-full py-2.5 px-6 rounded-full bg-white text-black font-medium text-sm"
                 >
                   Contact Me
                 </button>
                 
                 {/* Social Links */}
-                <div className="flex justify-center space-x-6 mt-8">
-                  <a href="https://twitter.com/DasunThamash" className="text-gray-400 hover:text-white transition-colors duration-300">
-                    <span className="text-sm">Twitter</span>
+                <div className="flex justify-center space-x-6 mt-6">
+                  <a href="https://twitter.com/DasunThamash" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+                    Twitter
                   </a>
-                  <a href="https://www.linkedin.com/in/dasun-thamash-4a9614252/" className="text-gray-400 hover:text-white transition-colors duration-300">
-                    <span className="text-sm">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/dasun-thamash-4a9614252/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+                    LinkedIn
                   </a>
-                  <a href="https://github.com/dasunthamsh" className="text-gray-400 hover:text-white transition-colors duration-300">
-                    <span className="text-sm">GitHub</span>
+                  <a href="https://github.com/dasunthamsh" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-300 text-sm">
+                    GitHub
                   </a>
                 </div>
               </div>
@@ -236,7 +238,7 @@ const Header = () => {
         ></div>
       </div>
     </>
-  );
+  );  
 };
 
 export default Header;
