@@ -60,7 +60,7 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
        
         {/* Intro text - now above "Dasun" */}
       <div className="fixed bottom-[15%] left-0 z-20   w-full max-w-[600px]">
-        <p className="font-nimbus text-sm sm:text-xl leading-relaxed font-medium text-left mx-3">
+        <p className="font-nimbus text-sm sm:text-xl leading-relaxed font-medium mx-3">
           I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions.
         </p>
       </div>
@@ -73,7 +73,7 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
           }`}
         >
           <span 
-            className="text-white font-extrabold tracking-normal"
+            className="text-white font-extrabold font- tracking-normal"
             style={{ 
               fontFamily: "'Inter Display', sans-serif",
               fontSize: 'clamp(8rem, 18vw, 18rem)',
