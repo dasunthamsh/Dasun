@@ -35,7 +35,7 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
         />
 
         {/* Content container - moved to left and bottom */}
-        <div className='absolute bottom-36 sm:bottom-56 left-0 z-20 text-left'>
+        <div className='absolute bottom-44 sm:bottom-56 left-0 z-20 text-left'>
           <div className="max-w-md pl-8">
             <p className="font-nimbus text-lg leading-relaxed">
               I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions .

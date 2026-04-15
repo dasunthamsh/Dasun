@@ -41,7 +41,7 @@ const allLogos = [
 
 const LogosPage = () => {
   return (
-    <main className=" text-white py-20 px-6">
+    <main className=" text-white py-20 px-6 bg-[#0A0A0A]">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12">

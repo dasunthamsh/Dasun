@@ -81,7 +81,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="min-h-screen text-white py-20 px-6">
+    <div className="min-h-screen text-white py-20 px-6 bg-[#0A0A0A]">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mx-auto max-w-5xl text-center mb-20">

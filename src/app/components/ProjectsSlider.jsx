@@ -54,7 +54,7 @@ const ProjectsSlider = () => {
   return (
     <div
       id="contact"
-      className="flex w-full w-full overflow-hidden"
+      className="flex w-full w-full overflow-hidden bg-[#0A0A0A]"
       
     >
       <section className="w-1/3 md:1/4 p-1 md:p-3">

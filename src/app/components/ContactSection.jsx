@@ -28,7 +28,7 @@ const ContactSection = () => {
   return (
     <div 
       id="contact"
-      className="text-white text-center justify-center content-center min-h-screen flex flex-col items-center px-4 "
+      className="text-white text-center justify-center content-center min-h-screen flex flex-col items-center px-4 bg-[#0A0A0A] "
     >
 
       <div className='backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl rounded-xl p-8 md:p-24 relative'>

@@ -97,7 +97,7 @@ const EducationExperience = () => {
   };
 
   return (
-    <div>
+    <div className='bg-[#0A0A0A]'>
       {/* Header */}
       <div className="flex justify-center gap-5 text-5xl font-bold my-10 flex-wrap">
         <h1 

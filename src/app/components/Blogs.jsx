@@ -48,7 +48,7 @@ const designs = [
 
 const DesignSection = () => {
   return (
-    <section id="designs" className="w-full px-6 py-20 text-white">
+    <section id="designs" className="w-full px-6 py-20 text-white bg-[#0A0A0A]">
       {/* Header */}
       
 

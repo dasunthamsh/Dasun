@@ -42,27 +42,27 @@ export default function Home() {
           <AboutSection/>
         </section>
 
-        <section id="education" className="mt-20 relative z-20">  
+        <section id="education" className="pt-20 relative z-20">  
           <EducationExperience/>
         </section>
 
-        <section>
+        <section className='relative z-20'>
           <VlogsSection/>
         </section>
 
-        <section className="mt-20 relative">
+        <section className="mt-20 relative z-20">
           <LogoCarousel/>
         </section>
 
-        <section id="projects" className="mt-20 relative">
+        <section id="projects" className="mt-20 relative z-20">
           <Projects/>
         </section>
 
-        <section className="mt-20 relative">
+        <section className="mt-20 relative z-20">
           <ProjectsSlider/>
         </section>
 
-        <section id="contact" className="relative">
+        <section id="contact" className="relative z-20">
           <ContactSection/>
         </section>
 
@@ -71,7 +71,7 @@ export default function Home() {
 
               <section id="home" className="relative z-10">
         
-        <VisitorCounter/>
+        
       </section>
 
       </main>
