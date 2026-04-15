@@ -1,7 +1,30 @@
 import { FaTwitter, FaFacebookF, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 export default function Home() {
+  const [showDasunText, setShowDasunText] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get the viewport height
+      const viewportHeight = window.innerHeight;
+      // Get scroll position
+      const scrollY = window.scrollY;
+      
+      // Hide the text when scrolled more than viewport height
+      // Adjust the threshold as needed (e.g., viewportHeight * 0.8 for earlier fade)
+      if (scrollY > viewportHeight * 0.7) {
+        setShowDasunText(false);
+      } else {
+        setShowDasunText(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <main className="h-screen w-full text-white flex items-center justify-center 
 bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
@@ -35,16 +58,20 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
         />
 
         {/* Content container - moved to left and bottom */}
-        <div className='absolute bottom-44 sm:bottom-56 left-0 z-20 text-left'>
+        <div className='absolute bottom-44 sm:bottom-60 left-0 z-20 text-left'>
           <div className="max-w-md pl-8">
-            <p className="font-nimbus text-lg leading-relaxed">
+            <p className="font-nimbus text-lg leading-relaxed font-medium">
               I'm a creative Designer and Frontend Developer from Sri Lanka, passionate about building innovative solutions .
             </p>
           </div>
         </div>
         
-        {/* "Dasun" text at bottom center - moved forward with larger font */}
-        <div className="fixed sm:-bottom-17 -bottom-6 left-0 right-0 flex justify-center z-20">
+        {/* "Dasun" text at bottom center - hidden when scrolled */}
+        <div 
+          className={`fixed sm:-bottom-17 -bottom-6 left-0 right-0 flex justify-center z-20 transition-all duration-500 ${
+            showDasunText ? 'opacity-100 visible' : 'opacity-0 invisible'
+          }`}
+        >
           <span 
             className="text-white font-extrabold tracking-normal"
             style={{ 
