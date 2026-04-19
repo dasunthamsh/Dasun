@@ -55,51 +55,69 @@ const ScrollingImageOverlay = () => {
                         </div>
                     </div>
 
-                    <div className='flex justify-center flex-wrap gap-8'>
-                        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
-                             <img
-                            src="/images/react.png"
-                            alt="Fashion Model"
-                            className="w-8 rounded-lg shadow-lg"
-                        />
-                        </div>
-                        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
-                             <img
-                            src="/images/framer.png "
-                            alt="Fashion Model"
-                            className="w-9 rounded-lg shadow-lg"
-                        />
-                        </div>
-                         <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
-                             <img
-                            src="/images/next.png"
-                            alt="Fashion Model"
-                            className="w-12 rounded-lg shadow-lg"
-                        />
-                        </div>
-                         <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
-                             <img
-                            src="/images/illustrator.png"
-                            alt="Fashion Model"
-                            className="w-10 rounded-lg shadow-lg"
-                        />
-                        </div>
-                         <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
-                             <img
-                            src="/images/ps.png"
-                            alt="Fashion Model"
-                            className="w-10 rounded-lg shadow-lg"
-                        />
-                        </div>
-                        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
-                             <img
-                            src="/images/figma.png"
-                            alt="Fashion Model"
-                            className="w-8 rounded-lg shadow-lg"
-                        />
-                        </div>
-                        
-                    </div>
+                   <div className='flex justify-center flex-wrap gap-8'>
+
+    <a href="https://discord.com/dasun_thamash" target="_blank" rel="noopener noreferrer">
+        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
+            <img
+                src="/images/accounts/discord.png"
+                alt="Discord"
+                className="w-8 rounded-lg shadow-lg"
+            />
+        </div>
+    </a>
+
+    <a href="https://t.me/Dasun_thamash" target="_blank" rel="noopener noreferrer">
+        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
+            <img
+                src="/images/accounts/telegram.png"
+                alt="Telegram"
+                className="w-9 rounded-lg shadow-lg"
+            />
+        </div>
+    </a>
+
+    <a href="https://github.com/dasunthamsh" target="_blank" rel="noopener noreferrer">
+        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
+            <img
+                src="/images/accounts/github.png"
+                alt="GitHub"
+                className="w-12 rounded-lg shadow-lg"
+            />
+        </div>
+    </a>
+
+    <a href="https://www.linkedin.com/in/dasun-thamash-4a9614252/" target="_blank" rel="noopener noreferrer">
+        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
+            <img
+                src="/images/accounts/linkedin.png"
+                alt="LinkedIn"
+                className="w-10 rounded-lg shadow-lg"
+            />
+        </div>
+    </a>
+
+    <a href="https://www.instagram.com/dasun_thamash/?hl=en" target="_blank" rel="noopener noreferrer">
+        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
+            <img
+                src="/images/accounts/instagram.png"
+                alt="Instagram"
+                className="w-10 rounded-lg shadow-lg"
+            />
+        </div>
+    </a>
+
+    <a href="https://www.behance.net/dasunthamash" target="_blank" rel="noopener noreferrer">
+        <div className='w-14 h-14 bg-[#171717] flex justify-center items-center m-2 rounded-lg'>
+            <img
+                src="/images/accounts/behance.png"
+                alt="Behance"
+                className="w-8 rounded-lg shadow-lg"
+            />
+        </div>
+    </a>
+
+</div>
 
                        
                         
