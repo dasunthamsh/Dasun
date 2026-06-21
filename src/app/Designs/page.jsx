@@ -52,6 +52,14 @@ const allDesigns = [
    {
     id: 8,
     image: '/images/post/p12.jpg',
+  },
+   {
+    id: 8,
+    image: '/images/post/p13.png',
+  },
+   {
+    id: 8,
+    image: '/images/post/p14.png',
   }
 
 ];
