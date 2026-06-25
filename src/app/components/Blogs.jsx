@@ -35,11 +35,11 @@ const designs = [
   },
     {
     id: 8,
-    image: '/images/post/p13.png',
+    image: '/images/post/P13.png',
   },
    {
     id: 8,
-    image: '/images/post/p14.png',
+    image: '/images/post/P14.png',
   },
   {
     id: 8,
