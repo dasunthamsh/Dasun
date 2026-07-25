@@ -6,9 +6,21 @@ const EducationExperience = () => {
   const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
 
   const items = [
-    {
+
+       {
       id: 1,
       number: "1",
+      title: "Open Web Lab (Dubai)",
+      description: "Working as a UI/UX Engineer",
+      detailedDescription: "Currently working as a UI/UX Engineer. Responsible for designing intuitive user interfaces, improving user experiences, creating wireframes, interactive prototypes, design systems, and collaborating closely with developers to deliver modern, user-centered digital products.",
+      period: "March 2026 - Present",
+      type: "experience",
+      aosAnimation: "zoom-out",
+      aosDuration: "2000"
+    },
+    {
+      id: 1,
+      number: "2",
       title: "AUS-ETECH (Australia)",
       description: "Work as Designer AND Developer",
       detailedDescription: "Graphic design–focused professional with a strong foundation in visualstorytelling, branding, and intuitive icon creation.",
@@ -19,7 +31,7 @@ const EducationExperience = () => {
     },
     {
       id: 2,
-      number: "2",
+      number: "3",
       title: "GZONE",
       description: "Work as Designer.",
       detailedDescription: "Graphic design–driven UI/UX designer who crafted a live streamingecosystem for gamers,.",
@@ -30,7 +42,7 @@ const EducationExperience = () => {
     },
     {
       id: 3,
-      number: "3",
+      number: "4",
       title: "(TOP UP) London Metropolitan University",
       description: "BEng (Hons) in Software Engineering (TOP UP) <br> London Metropolitan University (UK) (LMU-T-BENG-SE).",
       detailedDescription: "Top-up degree focusing on advanced software engineering principles, software architecture, and project management. Final year project involved developing a scalable microservices architecture.",
@@ -41,7 +53,7 @@ const EducationExperience = () => {
     },
     {
       id: 4,
-      number: "4",
+      number: "5",
       title: "(HND) Institute of Software Engineering",
       description: "Bsc(Hons). in Computer Science IJSE",
       detailedDescription: "Higher National Diploma in Computer Science covering fundamentals of programming, data structures, algorithms, databases, and software development methodologies.",
@@ -50,28 +62,28 @@ const EducationExperience = () => {
       aosAnimation: "zoom-out",
       aosDuration: "2000"
     },
-    {
-      id: 5,
-      number: "5",
-      title: "DSMP",
-      description: "DESIGNING & DEVELOPMENT  MASTER PROGRAM.",
-      detailedDescription: "Comprehensive full-stack development program covering frontend (React, Vue), backend (Node.js, Express), databases (MongoDB, PostgreSQL), and DevOps (Docker, CI/CD).",
-      period: "Jan 2023 - Sep 2023",
-      type: "education",
-      aosAnimation: "zoom-out",
-      aosDuration: "2000"
-    },
-    {
-      id: 6,
-      number: "6",
-      title: "FSD ACADEMY",
-      description: "DESIGNING MASTER",
-      detailedDescription: "Advanced UI/UX design course covering user research, wireframing, prototyping, design systems, and usability testing using Figma and Adobe XD.",
-      period: "Sep 2023 - Jan 2024",
-      type: "education",
-      aosAnimation: "zoom-out",
-      aosDuration: "2000"
-    }
+    // {
+    //   id: 5,
+    //   number: "5",
+    //   title: "DSMP",
+    //   description: "DESIGNING & DEVELOPMENT  MASTER PROGRAM.",
+    //   detailedDescription: "Comprehensive full-stack development program covering frontend (React, Vue), backend (Node.js, Express), databases (MongoDB, PostgreSQL), and DevOps (Docker, CI/CD).",
+    //   period: "Jan 2023 - Sep 2023",
+    //   type: "education",
+    //   aosAnimation: "zoom-out",
+    //   aosDuration: "2000"
+    // },
+    // {
+    //   id: 6,
+    //   number: "6",
+    //   title: "FSD ACADEMY",
+    //   description: "DESIGNING MASTER",
+    //   detailedDescription: "Advanced UI/UX design course covering user research, wireframing, prototyping, design systems, and usability testing using Figma and Adobe XD.",
+    //   period: "Sep 2023 - Jan 2024",
+    //   type: "education",
+    //   aosAnimation: "zoom-out",
+    //   aosDuration: "2000"
+    // }
   ];
 
   const handleMouseEnter = (item, e) => {
