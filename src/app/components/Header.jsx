@@ -72,7 +72,7 @@ const Header = () => {
 return (
     <>
     <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] md:w-auto">
-  <div className="bg-[#171717] backdrop-blur-xl rounded-full shadow-2xl px-3 py-2 md:px-4 md:py-2 opacity-70">
+  <div className="bg-[#171717] backdrop-blur-xl rounded-full shadow-2xl px-3 py-2 md:px-2 md:py-2 opacity-70">
     <div className="flex items-center gap-3 md:gap-6">
             
             {/* Logo */}

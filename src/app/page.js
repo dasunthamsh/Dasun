@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans bg-[#0A0A0A] overflow-hidden">
+    <div className="flex min-h-screen items-center justify-center font-sans bg-[#000000] overflow-hidden">
       <main className="w-full">
 
         <section className="z-20">
@@ -42,8 +42,14 @@ export default function Home() {
           <AboutSection/>
         </section>
 
+        
+
         <section id="education" className="mt-20 relative">
           <EducationExperience/>
+        </section>
+
+        <section id="projects" className="mt-20 relative">
+          <Projects/>
         </section>
 
         <section>
@@ -54,9 +60,7 @@ export default function Home() {
           <LogoCarousel/>
         </section>
 
-        <section id="projects" className="mt-20 relative">
-          <Projects/>
-        </section>
+        
 
         <section className="mt-20 relative">
           <ProjectsSlider/>

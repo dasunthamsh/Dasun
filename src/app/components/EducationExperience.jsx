@@ -109,7 +109,7 @@ const EducationExperience = () => {
   };
 
   return (
-    <div className='bg-[#0A0A0A]'>
+    <div className='bg-[#000000]'>
       {/* Header */}
       <div className="flex justify-center gap-5 text-5xl font-bold my-10 flex-wrap">
         <h1 
@@ -175,6 +175,22 @@ const EducationExperience = () => {
             </div>
           ))}
         </div>
+
+          <div className='absolute -bottom-10 -right-10 opacity-20'>
+          <img
+            src="/images/back1.jpg"
+            alt="Fashion Model"
+            className="w-64 md:w-96 rounded-lg shadow-lg blur-xs"
+          />
+
+           {/* <img
+            src="/images/backorange.png"
+            alt="Fashion Model"
+            className="w-full  blur-xs opacity-35"
+          /> */}
+
+        </div>
+
       </div>
 
       {/* Popup for detailed description */}

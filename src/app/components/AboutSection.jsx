@@ -12,13 +12,19 @@ const ScrollingImageOverlay = () => {
 
 
     return (
-        <div className="text-white overflow-x-hidden bg-gradient-to-b from-black to-[#0A0A0A]" ref={containerRef}>
+        <div className="text-white overflow-x-hidden bg-[#000000]" ref={containerRef}>
             <div className="mx-5">
                 {/* Title at the top */}
                 <div className="pt-12 pb-8 text-center">
-                    <h1 ref={textRef} className="text-5xl font-extrabold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                        MORE ABOUT <br /> DASUN©
-                    </h1>
+                    <h1 ref={textRef} className="text-5xl font-extrabold">
+                    <span className="bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                        MORE ABOUT
+                    </span>
+                    <br />
+                    <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+                        DASUN©
+                    </span>
+                </h1>
                 </div>
 
                 {/* Hero section with image */}

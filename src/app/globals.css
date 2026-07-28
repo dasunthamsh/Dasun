@@ -73,3 +73,71 @@ body {
 .animate-vertical-down {
   animation: scroll-down 60s linear infinite;
 }
+
+
+
+
+
+/* Infinite Design Gallery Animation */
+
+.gallery-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.gallery-track {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+}
+
+
+/* Left scrolling */
+
+.gallery-move-left {
+  animation: galleryLeft 80s linear infinite;
+}
+
+
+/* Right scrolling */
+
+.gallery-move-right {
+  animation: galleryRight 90s linear infinite;
+}
+
+
+
+/* Animation */
+
+@keyframes galleryLeft {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+@keyframes galleryRight {
+
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+
+/* Optional: smoother rendering */
+
+.gallery-track {
+  will-change: transform;
+}
