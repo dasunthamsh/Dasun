@@ -20,7 +20,6 @@ const row2 = [
   { id: 12, image: "/images/post/p11.png" },
 ];
 
-
 function InfiniteRow({ items, direction }) {
   const gallery = [...items, ...items];
 
@@ -38,9 +37,9 @@ function InfiniteRow({ items, direction }) {
             key={index}
             style={{
               width: item.width,
-              height: 400,
             }}
-            className="rounded-2xl overflow-hidden flex-shrink-0 "
+            className="rounded-2xl overflow-hidden flex-shrink-0
+                       h-[220px] sm:h-[260px] md:h-[320px] lg:h-[400px] xl:h-[400px]"
           >
             <Image
               src={item.image}
@@ -56,45 +55,33 @@ function InfiniteRow({ items, direction }) {
   );
 }
 
-
 export default function DesignSection() {
   return (
     <section className=" py-20 overflow-hidden space-y-3 max-w-7xl mx-auto">
-
-
       <div className="mx-auto max-w-5xl text-center mb-20">
         <h2 className="text-5xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
           My Design Work
         </h2>
 
         <p className="mt-4 text-gray-400">
-         Explore my collection of graphic design projects and creative works
+          Explore my collection of graphic design projects and creative works
         </p>
       </div>
 
-
       {/* First Row */}
-      <InfiniteRow 
-        items={row1} 
-        direction="left" 
-      />
-
+      <InfiniteRow items={row1} direction="left" />
 
       {/* Second Row */}
-      <InfiniteRow 
-        items={row2} 
-        direction="right" 
-      />
+      <InfiniteRow items={row2} direction="right" />
 
       <div className="bg-[#000000] absolute blur-xl w-full h-44 -mt-16 left-0 right-0"></div>
 
-       <button
-        onClick={() => window.location.href = "/Designs"}
+      <button
+        onClick={() => (window.location.href = "/Designs")}
         className="absolute left-1/2 -translate-x-1/2 border border-amber-50 rounded-lg py-1 px-3 w-fit"
       >
         view all designs
       </button>
-      
     </section>
   );
 }
