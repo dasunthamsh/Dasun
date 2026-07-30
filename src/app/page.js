@@ -11,8 +11,10 @@ import Header from "./components/Header";
 import ProjectsSlider from './components/ProjectsSlider';
 import VlogsSection from './components/Blogs';
 import VisitorCounter from './components/VisitorCounter';
+import Brands from "./components/Brands";
 
 import { Analytics } from "@vercel/analytics/react";
+
 
 export default function Home() {
 
@@ -42,7 +44,7 @@ export default function Home() {
           <AboutSection/>
         </section>
 
-        
+
 
         <section id="education" className="mt-20 relative">
           <EducationExperience/>
@@ -65,6 +67,12 @@ export default function Home() {
         <section className="mt-20 relative">
           <ProjectsSlider/>
         </section>
+
+
+        <section>
+          <Brands/>
+        </section>
+
 
         <section id="contact" className="relative">
           <ContactSection/>
