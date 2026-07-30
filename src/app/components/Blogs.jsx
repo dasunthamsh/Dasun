@@ -39,14 +39,14 @@ function InfiniteRow({ items, direction }) {
               width: item.width,
             }}
             className="rounded-2xl overflow-hidden flex-shrink-0
-                       h-[220px] sm:h-[260px] md:h-[320px] lg:h-[400px] xl:h-[400px]"
+                       h-[260px] sm:h-[280px] md:h-[320px] lg:h-[400px] xl:h-[400px] "
           >
             <Image
               src={item.image}
               alt=""
               width={1200}
               height={900}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover "
             />
           </div>
         ))}
