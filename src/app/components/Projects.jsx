@@ -94,7 +94,7 @@ const Projects = () => {
         </div>
 
         {/* Projects Grid - 4 columns on desktop */}
-        <div className="grid gap-6 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-3 grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {items.map((item) => {
             const isClickable = item.url && item.url !== "";
             const [isHovered, setIsHovered] = useState(false);
@@ -105,11 +105,11 @@ const Projects = () => {
                 onClick={() => isClickable && handleProjectClick(item.url)}
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className={`group relative rounded-2xl overflow-hidden transition-all duration-300 ${
-                  isClickable 
-                    ? 'cursor-pointer hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-[1.02]' 
-                    : 'cursor-default opacity-75'
-                }`}
+               className={`group relative rounded-2xl overflow-hidden border border-white/10 transition-all duration-300 ${
+                isClickable 
+                  ? 'cursor-pointer hover:shadow-2xl hover:shadow-purple-500/20 hover:scale-[1.02]' 
+                  : 'cursor-default opacity-75'
+}`}
               >
                 {/* Image Container */}
                 <div className="overflow-hidden aspect-[3/4] relative">
@@ -123,7 +123,7 @@ const Projects = () => {
                       
                       {/* Content Overlay - Always visible at top left */}
                       <div className="absolute top-0 left-0 w-full p-4 bg-gradient-to-b from-black/70 via-black/40 to-transparent">
-                        <h3 className="px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-sm rounded-full inline">
+                        <h3 className="px-2 py-1 bg-white/20 backdrop-blur-sm text-white text-sm rounded-md inline">
                           {item.content}
                         </h3>
                       </div>
@@ -131,7 +131,7 @@ const Projects = () => {
                       {/* Hover Popup - Shows description */}
                       {isHovered && item.description && item.description[0] && (
                         <div className="absolute inset-0 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-all duration-300">
-                          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 max-w-[90%] transform transition-all duration-300 scale-100 opacity-100">
+                          <div className="bg-white/10 backdrop-blur-md  rounded-xl p-4 max-w-[90%] transform transition-all duration-300 scale-100 opacity-100">
                             <p className="text-white text-sm text-center">
                               {item.description[0]}
                             </p>
@@ -141,7 +141,7 @@ const Projects = () => {
                     </>
                   ) : (
                     <div className="w-full h-full flex items-center justify-center backdrop-blur-xl bg-white/5 border border-white/10">
-                      <span className="text-gray-400 text-lg">Coming Soon</span>
+                      <span className="text-gray-400 text-lg"></span>
                     </div>
                   )}
                 </div>

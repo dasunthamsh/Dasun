@@ -38,8 +38,9 @@ function InfiniteRow({ items, direction }) {
             style={{
               width: item.width,
             }}
-            className="rounded-2xl overflow-hidden flex-shrink-0
-                       h-[260px] sm:h-[280px] md:h-[320px] lg:h-[400px] xl:h-[400px] "
+            className="rounded-2xl overflow-hidden flex-shrink-0 
+           border border-white/10 
+           h-[260px] sm:h-[280px] md:h-[320px] lg:h-[400px] xl:h-[400px]"
           >
             <Image
               src={item.image}
