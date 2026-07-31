@@ -31,7 +31,7 @@ export default function Brands() {
           {brands.map((brand) => (
             <div
               key={brand.id}
-              className={`flex items-center justify-center w-28 h-20 ${
+              className={`flex items-center justify-center w-16 sm:w-24 md:w-28 h-12 sm:h-18 md:h-20 ${
                 brand.id >= 6 ? "col-span-1" : ""
               } ${
                 brand.id === 6 ? "col-start-2" : ""
