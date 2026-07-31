@@ -15,11 +15,42 @@ export default function Brands() {
   return (
     <section className="w-full mt-48">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-center text-3xl md:text-4xl font-bold mb-12">
-          Brands I've Worked With
-        </h2>
+        
 
-        <div className="flex flex-wrap justify-center items-center gap-10">
+        <div className="text-center mb-12">
+          <h1 className="text-5xl font-bold  mb-4">
+             Brands
+          </h1>
+          <p className="text-gray-300">
+            Some of Brands I've Worked With
+          </p>
+        </div>
+
+        {/* Small & Medium */}
+        <div className="grid grid-cols-5 justify-items-center gap-y-8 lg:hidden">
+          {brands.map((brand) => (
+            <div
+              key={brand.id}
+              className={`flex items-center justify-center w-28 h-20 ${
+                brand.id >= 6 ? "col-span-1" : ""
+              } ${
+                brand.id === 6 ? "col-start-2" : ""
+              }`}
+            >
+              <Image
+                src={brand.logo}
+                alt={brand.name}
+                width={180}
+                height={80}
+                className="h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
+                priority
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Large & Up */}
+        <div className="hidden lg:flex justify-center items-center gap-10">
           {brands.map((brand) => (
             <div
               key={brand.id}
@@ -30,7 +61,7 @@ export default function Brands() {
                 alt={brand.name}
                 width={180}
                 height={80}
-                className="object-contain w-auto h-16 transition-transform duration-300 hover:scale-110"
+                className="h-16 w-auto object-contain transition-transform duration-300 hover:scale-110"
                 priority
               />
             </div>

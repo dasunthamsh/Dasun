@@ -42,12 +42,12 @@ function InfiniteRow({ items, direction }) {
            border border-white/10 
            h-[260px] sm:h-[280px] md:h-[320px] lg:h-[400px] xl:h-[400px]"
           >
-            <Image
+              <Image
               src={item.image}
               alt=""
               width={1200}
               height={900}
-              className="w-full h-full object-cover "
+              className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-120"
             />
           </div>
         ))}

@@ -65,11 +65,11 @@ const Projects = () => {
     },
     { 
       id: 8, 
-      content: "Coming soon", 
-      bgColor: "",
-      imageSrc: "",
-      description: ["An e-commerce website for an electronics store, showcasing products and enabling smooth online shopping."],
-      url: ""
+      content: "Pokemon", 
+      bgColor: "bg-indigo-100",
+      imageSrc: "/images/pokekadepost.png",
+      description: ["An e-commerce website for a pokemon cards store, showcasing products and enabling smooth online shopping."],
+      url: "https://poke-kade-web.vercel.app/"
     },
   ];
 

@@ -155,10 +155,10 @@ const EducationExperience = () => {
                     <h2 className="text-md font-semibold tracking-wider group-hover:text-blue-300 transition-colors duration-300">
                       {item.title}
                     </h2>
-                    <span className={`text-xs px-2 py-1 rounded-full ${
+                    <span className={`text-xs px-2 py-1 rounded-md ${
                       item.type === 'education' 
-                        ? 'bg-blue-900/50 text-blue-300' 
-                        : 'bg-purple-900/50 text-purple-300'
+                        ? 'bg-green-900/50 text-green-300' 
+                        : 'bg-orange-900/30 text-orange-300'
                     }`}>
                       {item.type === 'education' ? 'Education' : 'Experience'}
                     </span>
