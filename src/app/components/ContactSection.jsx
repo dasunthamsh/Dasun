@@ -28,10 +28,10 @@ const ContactSection = () => {
   return (
     <div 
       id="contact"
-      className="text-white text-center justify-center content-center min-h-screen flex flex-col items-center px-4 bg-[#000000] "
+      className="text-white text-center justify-center content-center min-h-screen flex flex-col items-center mx-40 px-4 bg-[#000000] "
     >
 
-      <div className='backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl rounded-xl p-8  relative mx-12'>
+      <div className='backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl rounded-xl p-8  relative '>
         <h1 className="text-4xl md:text-9xl font-semibold mb-8 md:mb-12">
           HAVE AN IDEA?
         </h1>
