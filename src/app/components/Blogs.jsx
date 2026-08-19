@@ -91,7 +91,7 @@ export default function DesignSection() {
   <span className="absolute inset-[-100%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0deg,transparent_280deg,#fef3c7_360deg)]" />
 
   {/* Button content */}
-  <span className="relative block rounded-[7px] bg-black px-3 py-1 text-amber-50">
+  <span className="relative block rounded-[7px] bg-black px-3 py-1 text-amber-50 p-3">
     view all designs
   </span>
 </button>
