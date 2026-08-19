@@ -75,11 +75,11 @@ const allDesigns = [
   },
    {
     id: 8,
-    image: '/images/post/p13.png',
+    image: '/images/post/pp14.png',
   },
    {
     id: 8,
-    image: '/images/post/p14.png',
+    image: '/images/post/p13.png',
   },
   {
     id: 8,

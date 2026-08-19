@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const row1 = [
  
-  { id: 5, image: "/images/post/p17.png" },
+  { id: 5, image: "/images/post/pp17.png" },
   { id: 11, image: "/images/post/p4.jpeg" },
   { id: 2, image: "/images/post/mx.png" },
-  { id: 5, image: "/images/post/p16.png" },
-  { id: 3, image: "/images/post/p19.png" },
-  { id: 5, image: "/images/post/p18.png" },
+  { id: 5, image: "/images/post/pp16.png" },
+  { id: 3, image: "/images/post/pp19.png" },
+  { id: 5, image: "/images/post/pp18.png" },
   { id: 5, image: "/images/post/p21.png" },
 
   
@@ -20,7 +20,7 @@ const row2 = [
   { id: 8, image: "/images/post/P13.png" },
   { id: 6, image: "/images/post/p6.jpeg" },
   { id: 12, image: "/images/post/p11.png" },
-  { id: 10, image: "/images/post/p20.png" },
+  { id: 10, image: "/images/post/pp20.png" },
   { id: 1, image: "/images/post/p8.jpeg" },
   { id: 4, image: "/images/post/p9.png" },
 
