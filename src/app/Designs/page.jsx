@@ -39,7 +39,7 @@ const allDesigns = [
   },
   {
     id: 8,
-    image: '/images/post/p17.png',
+    image: '/images/post/pp17.png',
   },
   {
     id: 8,
@@ -51,7 +51,7 @@ const allDesigns = [
   },
    {
     id: 8,
-    image: '/images/post/p20.png',
+    image: '/images/post/pp20.png',
   },
    {
     id: 8,
@@ -59,11 +59,11 @@ const allDesigns = [
   },
    {
     id: 8,
-    image: '/images/post/p19.png',
+    image: '/images/post/pp19.png',
   },
    {
     id: 8,
-    image: '/images/post/p16.png',
+    image: '/images/post/pp16.png',
   },
    {
     id: 8,
@@ -83,7 +83,7 @@ const allDesigns = [
   },
   {
     id: 8,
-    image: '/images/post/p18.png',
+    image: '/images/post/pp18.png',
   }
 
 ];
