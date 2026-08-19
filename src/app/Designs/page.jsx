@@ -17,6 +17,10 @@ const allDesigns = [
     id: 3,
     image: '/images/post/p5.jpeg',
   },
+   {
+    id: 8,
+    image: '/images/post/p21.png',
+  },
   {
     id: 4,
     image: '/images/post/p9.png',
@@ -35,6 +39,10 @@ const allDesigns = [
   },
   {
     id: 8,
+    image: '/images/post/p17.png',
+  },
+  {
+    id: 8,
     image: '/images/post/p1.jpeg',
   },
    {
@@ -43,7 +51,19 @@ const allDesigns = [
   },
    {
     id: 8,
+    image: '/images/post/p20.png',
+  },
+   {
+    id: 8,
     image: '/images/post/p11.png',
+  },
+   {
+    id: 8,
+    image: '/images/post/p19.png',
+  },
+   {
+    id: 8,
+    image: '/images/post/p16.png',
   },
    {
     id: 8,
@@ -60,6 +80,10 @@ const allDesigns = [
    {
     id: 8,
     image: '/images/post/p14.png',
+  },
+  {
+    id: 8,
+    image: '/images/post/p18.png',
   }
 
 ];
@@ -86,9 +110,9 @@ const DesignsPage = () => {
           {allDesigns.map((design) => (
             <div
               key={design.id}
-              className="group bg-gray-800 rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300"
+              className="group bg-gray-800 rounded-2xl border border-white/10  overflow-hidden hover:shadow-2xl hover:shadow-purple-500/20 transition-all duration-300"
             >
-              <div className="overflow-hidden aspect-[3/4]">
+              <div className="overflow-hidden aspect-[3/4] ">
                 <img
                   src={design.image}
                   alt="Design work"
