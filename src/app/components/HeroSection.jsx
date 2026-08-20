@@ -71,23 +71,52 @@ bg-gradient-to-b from-[#DF8645] via-[#9D5E2D] via-[#563117] to-[#000000]">
 
 
         {/* "Dasun" text at bottom center - hidden when scrolled */}
-        <div 
-          className={`fixed sm:-bottom-17 -bottom-6 left-0 right-0 flex justify-center z-20 transition-all duration-500 ${
-            showDasunText ? 'opacity-100 visible' : 'opacity-0 invisible'
-          }`}
-        >
-          <span 
-            className="text-white font-extrabold font- tracking-normal"
-            style={{ 
-              fontFamily: "'Inter Display', sans-serif",
-              fontSize: 'clamp(8rem, 18vw, 18rem)',
-              textShadow: '0 2px 10px rgba(0,0,0,0.3)',
-              whiteSpace: 'nowrap'
-            }}
-          >
-            Dasun
-          </span>
-        </div>
+       <div
+  className={`fixed sm:-bottom-17 -bottom-6 left-0 right-0 flex justify-center z-20 transition-all duration-500 ${
+    showDasunText ? "opacity-100 visible" : "opacity-0 invisible"
+  }`}
+>
+  <svg
+    viewBox="0 0 800 220"
+    className="w-full max-w-[1200px] h-auto overflow-visible"
+  >
+    <defs>
+      <linearGradient id="orangeGradient">
+        <stop offset="0%" stopColor="#ff4500" />
+        <stop offset="40%" stopColor="#ff8c00" />
+        <stop offset="70%" stopColor="#ffd000" />
+        <stop offset="100%" stopColor="#ff4500" />
+      </linearGradient>
+    </defs>
+
+    {/* Main text */}
+    <text
+      x="400"
+      y="170"
+      textAnchor="middle"
+      style={{
+        fontFamily: "'Inter Display', sans-serif",
+        fontWeight: 800,
+        fontSize: "180px",
+      }}
+      fill="white"
+      stroke="url(#orangeGradient)"
+      strokeWidth="4"
+      paintOrder="stroke"
+      strokeDasharray="100 500"
+      strokeLinecap="round"
+    >
+      Dasun
+      <animate
+        attributeName="stroke-dashoffset"
+        from="0"
+        to="-600"
+        dur="12s"
+        repeatCount="indefinite"
+      />
+    </text>
+  </svg>
+</div>
 
         {/* Available Now indicator */}
         <div

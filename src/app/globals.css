@@ -141,3 +141,33 @@ body {
 .gallery-track {
   will-change: transform;
 }
+
+
+
+
+@keyframes textBorder {
+  0% {
+    -webkit-text-stroke: 2px #ff6a00;
+    text-shadow:
+      0 0 5px rgba(255, 106, 0, 0.3),
+      0 0 15px rgba(255, 106, 0, 0.15);
+  }
+
+  50% {
+    -webkit-text-stroke: 2px #ffb347;
+    text-shadow:
+      0 0 8px rgba(255, 106, 0, 0.6),
+      0 0 25px rgba(255, 106, 0, 0.3);
+  }
+
+  100% {
+    -webkit-text-stroke: 2px #ff6a00;
+    text-shadow:
+      0 0 5px rgba(255, 106, 0, 0.3),
+      0 0 15px rgba(255, 106, 0, 0.15);
+  }
+}
+
+.animate-text-border {
+  animation: textBorder 2s ease-in-out infinite;
+}
